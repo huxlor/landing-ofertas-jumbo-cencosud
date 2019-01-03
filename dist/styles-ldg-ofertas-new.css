@@ -669,6 +669,50 @@
   .col-lg-offset-0 {
     margin-left: 0; } }
 
-body {
-  background-color: red; }
+.new-offer-landing .content-offers .item-offer {
+  border: solid 1px #b2b2b2;
+  border-right: none;
+  max-width: 288px;
+  position: relative; }
+  .new-offer-landing .content-offers .item-offer a {
+    text-decoration: none; }
+    .new-offer-landing .content-offers .item-offer a .link {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      z-index: 1; }
+  .new-offer-landing .content-offers .item-offer .image-product {
+    margin: 20px 0 10px;
+    padding: 0 40px;
+    max-height: 204px; }
+    .new-offer-landing .content-offers .item-offer .image-product img {
+      display: block;
+      width: auto;
+      max-width: 100%;
+      height: auto;
+      max-height: 204px;
+      margin: 0 auto; }
+  .new-offer-landing .content-offers .item-offer .title-product {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Helvetica'; }
+    .new-offer-landing .content-offers .item-offer .title-product h3 {
+      font-size: 20px;
+      text-transform: uppercase;
+      line-height: 1; }
+    .new-offer-landing .content-offers .item-offer .title-product div {
+      font-size: 14px; }
+  .new-offer-landing .content-offers .item-offer .info .percentPricing .percentCreditCard .tjc-percent {
+    display: inline-block;
+    width: 48%; }
+  .new-offer-landing .content-offers .item-offer .info .percentPricing .percentCreditCard .regular-percent {
+    display: inline-block;
+    width: 50%; }
+  .new-offer-landing .content-offers .item-offer .info .percentPricing .percentCreditCard .valuePercent {
+    font-size: 60px;
+    font-family: 'HelveticaNeue-Bold'; }
+  .new-offer-landing .content-offers .item-offer:last-child {
+    border-right: solid 1px #b2b2b2; }
 
