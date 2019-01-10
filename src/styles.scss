@@ -1,3 +1,28 @@
+@font-face {
+    font-family: 'HelveticaNeue77';
+    src: url('../fonts/HelveticaNeueLTPro-BdCn.eot?#iefix') format('embedded-opentype'), url('../fonts/HelveticaNeueLTPro-BdCn.woff') format('woff'), url('../fonts/HelveticaNeueLTPro-BdCn.ttf')  format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'HelveticaNeue75';
+    src: url('../fonts/HelveticaNeueLTPro-Bd-2.eot?#iefix') format('embedded-opentype'), url('../fonts/HelveticaNeueLTPro-Bd-2.woff') format('woff'), url('../fonts/HelveticaNeueLTPro-Bd-2.ttf')  format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'HelveticaNeueL45';
+    src: url('../fonts/HelveticaNeue-Light-3.eot?#iefix') format('embedded-opentype'), url('../fonts/HelveticaNeue-Light-3.woff') format('woff'), url('../fonts/HelveticaNeue-Light-3.ttf')  format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+$hel-b77: 'HelveticaNeue77';
+$hel-b75: 'HelveticaNeue75';
+$hel-l45: 'HelveticaNeueL45'; 
+
 .new-offer-landing{
     .content-offers{
         .item-offer{
@@ -19,7 +44,7 @@
             }
 
             .image-product{
-                margin: 20px 0 10px;
+                margin: 23px 0 20px; 
                 padding: 0 40px;
                 max-height: 204px;
                 img{
@@ -32,40 +57,199 @@
                 }
             }
 
-            .title-product{
-                text-align: center;
-                margin-bottom: 20px;
-                font-family: 'Helvetica';
-                h3{
-                    font-size: 20px;
-                    text-transform: uppercase;
-                    line-height: 1;
+            &.dinamica{
+                .title-product{ 
+                    text-align: center;
+                    margin-bottom: 25px;
+                    h3{
+                        font-size: 20px;
+                        text-transform: uppercase;
+                        line-height: 1;
+                        font-family: $hel-b77;
+                    }
+    
+                    div{
+                        font-size: 14px;
+                        font-family: $hel-l45;
+                    }
                 }
 
-                div{
-                    font-size: 14px;
+                .info{
+                    .percentPricing{
+                       display: block;
+                       width: 100%;
+                       text-align: center;
+                        .percentCreditCard{
+                            .tjc-percent{
+                               display: inline-block;
+                               width: 51%;
+                               padding-left: 10px;
+                            }
+       
+                            .regular-percent{
+                               display: inline-block;
+                               width: 47%;
+                               padding-left: 10px;
+                            }
+                            //General Style
+                            .valuePercent{
+                                font-size: 60px;
+                                font-family: $hel-b75;
+                                display: inline-block;
+                                vertical-align: top;
+                                line-height: .9; 
+                                position: relative;  
+                                width: 100%;
+                                text-align: left;
+                                &.notop{
+                                    &:before{
+                                        content: 'Hasta';
+                                        position: absolute;
+                                        display: block;
+                                        font-family: $hel-b75;
+                                        font-size: 11px;
+                                        line-height: 1em;
+                                        top: -8px;
+                                        left: 0px;
+                                    }
+                                }
+                            }
+
+                            .labelPercent{
+                                font-size: 12px;
+                                font-family: $hel-l45;
+                                text-align: left;
+                                height: 15px;
+                                overflow: hidden;
+                            }
+                            //General Style
+                        }
+                    }   
+                }
+
+                &.TarjetaCencosud{
+                    .info{
+                        .percentPricing{
+                            .percentCreditCard{
+                                .tjc-percent{
+                                   color: #e88612;
+                                   .creditCard{
+                                        display: inline-block;
+                                        vertical-align: top;
+                                        margin-left: -12px;
+                                       &:before{
+                                            content: '%DTO';
+                                            font-family: $hel-b77;
+                                            font-size: 18px;
+                                            line-height: 1.2em;
+                                            color: #e88613;
+                                            position: absolute;
+                                            top: 3px;
+                                       }
+
+                                       &:after{
+                                            content: '';
+                                            display: block;
+                                            width: 45px;
+                                            height: 30px;
+                                            background: url('https://www.tiendasjumbo.co/arquivos/tjc-tmc.png') no-repeat;
+                                            background-size: 100%;
+                                            position: absolute;
+                                            bottom: 0;
+                                       }
+                                   }
+
+                                   .labelPercent{
+                                        font-size: 12px;
+                                    }
+                                }
+
+                                .regular-percent{
+                                    .creditCard{
+                                        display: inline-block;
+                                        vertical-align: top;
+                                        margin-left: -12px;
+                                            &:before{
+                                                content: '%DTO';
+                                                font-family: $hel-b77;
+                                                font-size: 18px;
+                                                line-height: 1.2em;
+                                            }
+                                        }
+
+                                    .labelPercent{
+                                         font-size: 12px;
+                                     }
+                                }
+                            }
+                        }   
+                    }
+                }
+
+                &.aval{
+                    .info{
+                        .percentPricing{
+                            .percentCreditCard{
+                                .tjc-percent{
+                                   color: #255faa;
+                                    .creditCard{
+                                    display: inline-block;
+                                    vertical-align: top;
+                                    margin-left: -12px;
+                                        &:before{
+                                            content: '%DTO';
+                                            font-family: $hel-b77;
+                                            font-size: 18px;
+                                            line-height: 1.2em;
+                                            color: #255faa;
+                                        }
+                                    }
+
+                                   .labelPercent{
+                                        font-size: 12px;
+                                    }
+                                }
+
+                                .regular-percent{
+                                    .creditCard{
+                                    display: inline-block;
+                                    vertical-align: top;
+                                    margin-left: -12px;
+                                        &:before{
+                                            content: '%DTO';
+                                            font-family: $hel-b77;
+                                            font-size: 18px;
+                                            line-height: 1.2em;
+                                        }
+                                    }
+
+                                    .labelPercent{
+                                         font-size: 12px;
+                                     }
+                                }
+                            }
+                        }   
+                    }
                 }
             }
 
-            .info{
-             .percentPricing{
-                 .percentCreditCard{
-                     .tjc-percent{
-                        display: inline-block;
-                        width: 48%;
-                     }
+            .legals{
+                border-top: solid 1px #b2b2b2;
+                margin-top: 30px;
+                p{
+                    text-align: center;
+                    font-family: 'Source Sans Pro';
+                    font-size: 13px;
+                    color: #2e2e2e;
+                    &:last-child{
+                        padding-top: 0;
+                        padding-bottom: 20px;
+                    }
 
-                     .regular-percent{
-                        display: inline-block;
-                        width: 50%;
-                     }
-
-                     .valuePercent{
-                         font-size: 60px;
-                         font-family: 'HelveticaNeue-Bold';
-                     }
-                 }
-             }   
+                    &:first-child{
+                        padding-top: 20px;
+                    }
+                }
             }
 
             &:last-child{
