@@ -1,0 +1,26 @@
+//Mixins
+@mixin labelProperty {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 10px;
+    display: block;
+    width: 125px;
+    height: 50px;
+    background-repeat: no-repeat;
+}
+
+@mixin creditCardProperty {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: -12px;
+}
+
+@mixin creditCardBeforeProperty {
+    content: '%DTO';
+    font-family: $hel-b77;
+    font-size: 18px;
+    line-height: 1.2em;
+}
+
+//Mixins

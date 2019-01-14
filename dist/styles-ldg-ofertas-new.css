@@ -687,6 +687,9 @@
   font-weight: normal;
   font-style: normal; }
 
+b {
+  font-family: "HelveticaNeue77"; }
+
 .new-offer-landing .content-offers .item-offer {
   border: solid 1px #b2b2b2;
   border-right: none;
@@ -712,6 +715,18 @@
       height: auto;
       max-height: 204px;
       margin: 0 auto; }
+  .new-offer-landing .content-offers .item-offer .title-product.sxh:before {
+    content: '';
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    display: block;
+    width: 60px;
+    height: 50px;
+    background-image: url("https://www.tiendasjumbo.co/arquivos/label-sxh-new-landing.png");
+    background-repeat: no-repeat;
+    background-color: #fff;
+    border-radius: 5px; }
   .new-offer-landing .content-offers .item-offer.dinamica .title-product {
     text-align: center;
     margin-bottom: 25px; }
@@ -735,6 +750,15 @@
       display: inline-block;
       width: 47%;
       padding-left: 10px; }
+      .new-offer-landing .content-offers .item-offer.dinamica .info .percentPricing .percentCreditCard .regular-percent .creditCard {
+        display: inline-block;
+        vertical-align: top;
+        margin-left: -12px; }
+        .new-offer-landing .content-offers .item-offer.dinamica .info .percentPricing .percentCreditCard .regular-percent .creditCard:before {
+          content: '%DTO';
+          font-family: "HelveticaNeue77";
+          font-size: 18px;
+          line-height: 1.2em; }
     .new-offer-landing .content-offers .item-offer.dinamica .info .percentPricing .percentCreditCard .valuePercent {
       font-size: 60px;
       font-family: "HelveticaNeue75";
@@ -770,7 +794,7 @@
         font-family: "HelveticaNeue77";
         font-size: 18px;
         line-height: 1.2em;
-        color: #e88613;
+        color: #e88612;
         position: absolute;
         top: 3px; }
       .new-offer-landing .content-offers .item-offer.dinamica.TarjetaCencosud .info .percentPricing .percentCreditCard .tjc-percent .creditCard:after {
@@ -778,7 +802,7 @@
         display: block;
         width: 45px;
         height: 30px;
-        background: url("https://www.tiendasjumbo.co/arquivos/tjc-tmc.png") no-repeat;
+        background: url("https://jumbocolombiafood.vteximg.com.br/arquivos/label-tmc-new-landing.png") no-repeat;
         background-size: 100%;
         position: absolute;
         bottom: 0; }
@@ -795,6 +819,16 @@
       line-height: 1.2em; }
   .new-offer-landing .content-offers .item-offer.dinamica.TarjetaCencosud .info .percentPricing .percentCreditCard .regular-percent .labelPercent {
     font-size: 12px; }
+  .new-offer-landing .content-offers .item-offer.dinamica.aval .title-product:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 10px;
+    display: block;
+    width: 125px;
+    height: 50px;
+    background-repeat: no-repeat;
+    background-image: url("https://www.tiendasjumbo.co/arquivos/label-aval-bg-new-landing.png"); }
   .new-offer-landing .content-offers .item-offer.dinamica.aval .info .percentPricing .percentCreditCard .tjc-percent {
     color: #255faa; }
     .new-offer-landing .content-offers .item-offer.dinamica.aval .info .percentPricing .percentCreditCard .tjc-percent .creditCard {
@@ -820,6 +854,102 @@
       line-height: 1.2em; }
   .new-offer-landing .content-offers .item-offer.dinamica.aval .info .percentPricing .percentCreditCard .regular-percent .labelPercent {
     font-size: 12px; }
+  .new-offer-landing .content-offers .item-offer.dinamica.bbva .title-product:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 10px;
+    display: block;
+    width: 125px;
+    height: 50px;
+    background-repeat: no-repeat;
+    background-image: url("https://www.tiendasjumbo.co/arquivos/label-bbva-bg-new-landing.png"); }
+  .new-offer-landing .content-offers .item-offer.dinamica.bbva .info .percentPricing .percentCreditCard .tjc-percent {
+    color: #0b1d3d; }
+    .new-offer-landing .content-offers .item-offer.dinamica.bbva .info .percentPricing .percentCreditCard .tjc-percent .creditCard {
+      display: inline-block;
+      vertical-align: top;
+      margin-left: -12px; }
+      .new-offer-landing .content-offers .item-offer.dinamica.bbva .info .percentPricing .percentCreditCard .tjc-percent .creditCard:before {
+        content: '%DTO';
+        font-family: "HelveticaNeue77";
+        font-size: 18px;
+        line-height: 1.2em;
+        color: #0b1d3d; }
+  .new-offer-landing .content-offers .item-offer.dinamica.colpatria .title-product:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 10px;
+    display: block;
+    width: 125px;
+    height: 50px;
+    background-repeat: no-repeat;
+    background-image: url("https://www.tiendasjumbo.co/arquivos/label-colpatria-bg-new-landing-v2.png"); }
+  .new-offer-landing .content-offers .item-offer.dinamica.colpatria .info .percentPricing .percentCreditCard .tjc-percent {
+    color: #cb2130; }
+    .new-offer-landing .content-offers .item-offer.dinamica.colpatria .info .percentPricing .percentCreditCard .tjc-percent .creditCard {
+      display: inline-block;
+      vertical-align: top;
+      margin-left: -12px; }
+      .new-offer-landing .content-offers .item-offer.dinamica.colpatria .info .percentPricing .percentCreditCard .tjc-percent .creditCard:before {
+        content: '%DTO';
+        font-family: "HelveticaNeue77";
+        font-size: 18px;
+        line-height: 1.2em;
+        color: #cb2130; }
+  .new-offer-landing .content-offers .item-offer.dinamica.visa .title-product:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 10px;
+    display: block;
+    width: 125px;
+    height: 50px;
+    background-repeat: no-repeat;
+    background-image: url("https://www.tiendasjumbo.co/arquivos/label-visa-bg-new-landing.png"); }
+  .new-offer-landing .content-offers .item-offer.dinamica.visa .info .percentPricing .percentCreditCard .tjc-percent {
+    color: #25479f; }
+    .new-offer-landing .content-offers .item-offer.dinamica.visa .info .percentPricing .percentCreditCard .tjc-percent .creditCard {
+      display: inline-block;
+      vertical-align: top;
+      margin-left: -12px; }
+      .new-offer-landing .content-offers .item-offer.dinamica.visa .info .percentPricing .percentCreditCard .tjc-percent .creditCard:before {
+        content: '%DTO';
+        font-family: "HelveticaNeue77";
+        font-size: 18px;
+        line-height: 1.2em;
+        color: #25479f; }
+  .new-offer-landing .content-offers .item-offer.dinamica.bbog .title-product:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 10px;
+    display: block;
+    width: 125px;
+    height: 50px;
+    background-repeat: no-repeat;
+    background-image: url("https://www.tiendasjumbo.co/arquivos/label-bbog-bg-new-landing.png"); }
+  .new-offer-landing .content-offers .item-offer.dinamica.bbog .info .percentPricing .percentCreditCard .tjc-percent {
+    color: #2a3e8b; }
+    .new-offer-landing .content-offers .item-offer.dinamica.bbog .info .percentPricing .percentCreditCard .tjc-percent .creditCard {
+      display: inline-block;
+      vertical-align: top;
+      margin-left: -12px; }
+      .new-offer-landing .content-offers .item-offer.dinamica.bbog .info .percentPricing .percentCreditCard .tjc-percent .creditCard:before {
+        content: '%DTO';
+        font-family: "HelveticaNeue77";
+        font-size: 18px;
+        line-height: 1.2em;
+        color: #2a3e8b; }
+  .new-offer-landing .content-offers .item-offer.dinamica.bbog .info .percentPricing .percentCreditCard .labelPercent {
+    height: 30px !important; }
+  .new-offer-landing .content-offers .item-offer.dinamica.bbog .legals {
+    margin-top: 15px; }
+  .new-offer-landing .content-offers .item-offer.dinamica.simple .labelPercent {
+    height: 30px !important; }
+  .new-offer-landing .content-offers .item-offer.dinamica.simple .legals {
+    margin-top: 15px; }
   .new-offer-landing .content-offers .item-offer .legals {
     border-top: solid 1px #b2b2b2;
     margin-top: 30px; }
