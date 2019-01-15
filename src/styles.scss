@@ -28,6 +28,7 @@ b {
                 margin: 23px 0 20px;
                 padding: 0 40px;
                 max-height: 204px;
+                min-height: 200px;
                 img {
                     display: block;
                     width: auto;
@@ -53,6 +54,10 @@ b {
                         border-radius: 5px;
                     }
                 }
+
+                &.large{
+                    margin-top: -20px;
+                }
             }
             &.dinamica {
                 .title-product {
@@ -63,6 +68,8 @@ b {
                         text-transform: uppercase;
                         line-height: 1;
                         font-family: $hel-b77;
+                        max-height: 40px; 
+                        overflow: hidden;
                     }
                     div {
                         font-size: 14px;
@@ -158,6 +165,7 @@ b {
                                     }
                                     .labelPercent {
                                         font-size: 12px;
+                                        @include labelPercentProperty();
                                     }
                                 }
                                 .regular-percent {
@@ -197,6 +205,7 @@ b {
                                     }
                                     .labelPercent {
                                         font-size: 12px;
+                                        @include labelPercentProperty(); 
                                     }
                                 }
                                 .regular-percent {
@@ -235,6 +244,10 @@ b {
                                         }
                                     }
                                 }
+
+                                .labelPercent{
+                                    @include labelPercentProperty();
+                                }
                             }
                         }
                     }
@@ -260,6 +273,10 @@ b {
                                         }
                                     }
                                 }
+
+                                .labelPercent{
+                                    @include labelPercentProperty();
+                                }
                             }
                         }
                     }
@@ -284,6 +301,10 @@ b {
                                             color: $visa-color;
                                         }
                                     }
+                                }
+
+                                .labelPercent{
+                                    @include labelPercentProperty();
                                 }
                             }
                         }
@@ -312,6 +333,128 @@ b {
                                 }
                                 .labelPercent {
                                     height: 30px !important;
+                                    @include labelPercentProperty();
+                                }
+                            }
+                        }
+                    }
+                    .legals {
+                        margin-top: 15px;
+                    }
+                }
+
+                &.codensa {
+                    .title-product {
+                        &:after {
+                            @include labelProperty();
+                            background-image: url('https://www.tiendasjumbo.co/arquivos/label-codensa-bg-new-landing.png');
+                        }
+                    }
+                    .info {
+                        .percentPricing {
+                            .percentCreditCard {
+                                .tjc-percent {
+                                    color: $codensa-color;
+                                    .creditCard {
+                                        @include creditCardProperty();
+                                        &:before {
+                                            @include creditCardBeforeProperty();
+                                            color: $codensa-color;
+                                        }
+                                    }
+                                }
+                                .labelPercent {
+                                    height: 30px !important;
+                                    @include labelPercentProperty();
+                                }
+                            }
+                        }
+                    }
+                    .legals {
+                        margin-top: 15px;
+                    }
+                }
+
+                &.itau {
+                    .title-product {
+                        &:after {
+                            @include labelProperty();
+                            background-image: url('https://www.tiendasjumbo.co/arquivos/label-itau-bg-new-landing.png');
+                        }
+                    }
+                    .info {
+                        .percentPricing {
+                            .percentCreditCard {
+                                .tjc-percent {
+                                    color: $itau-color;
+                                    .creditCard {
+                                        @include creditCardProperty();
+                                        &:before {
+                                            @include creditCardBeforeProperty();
+                                            color: $itau-color;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                &.aexpress {
+                    .title-product {
+                        &:after {
+                            @include labelProperty();
+                            background-image: url('https://www.tiendasjumbo.co/arquivos/label-aexpress-bg-new-landing.png');
+                        }
+                    }
+                    .info {
+                        .percentPricing {
+                            .percentCreditCard {
+                                .tjc-percent {
+                                    color: $aexpress-color;
+                                    .creditCard {
+                                        @include creditCardProperty();
+                                        &:before {
+                                            @include creditCardBeforeProperty();
+                                            color: $aexpress-color;
+                                        }
+                                    }
+                                }
+                                .labelPercent {
+                                    height: 30px !important;
+                                    @include labelPercentProperty();
+                                }
+                            }
+                        }
+                    }
+                    .legals {
+                        margin-top: 15px;
+                    }
+                }
+
+                &.mastercard {
+                    .title-product {
+                        &:after {
+                            @include labelProperty();
+                            background-image: url('https://www.tiendasjumbo.co/arquivos/label-mastercard-bg-new-landing.png');
+                        }
+                    }
+                    .info {
+                        .percentPricing {
+                            .percentCreditCard {
+                                .tjc-percent {
+                                    color: $mastercard-color-2;
+                                    .creditCard {
+                                        @include creditCardProperty();
+                                        &:before {
+                                            @include creditCardBeforeProperty();
+                                            color: $mastercard-color-2;
+                                        }
+                                    }
+                                }
+                                .labelPercent {
+                                    height: 30px !important;
+                                    @include labelPercentProperty();
                                 }
                             }
                         }

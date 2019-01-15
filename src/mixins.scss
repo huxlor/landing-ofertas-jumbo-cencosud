@@ -23,4 +23,9 @@
     line-height: 1.2em;
 }
 
+@mixin labelPercentProperty{
+    text-align: center;
+    margin-left: -15px; 
+}
+
 //Mixins
