@@ -716,33 +716,35 @@ b {
       height: auto;
       max-height: 204px;
       margin: 0 auto; }
-  .new-offer-landing .content-offers .item-offer .title-product.sxh:before {
-    content: '';
-    position: absolute;
-    top: 5px;
-    right: 5px;
-    display: block;
-    width: 60px;
-    height: 50px;
-    background-image: url("https://www.tiendasjumbo.co/arquivos/label-sxh-new-landing.png");
-    background-repeat: no-repeat;
-    background-color: #fff;
-    border-radius: 5px; }
-  .new-offer-landing .content-offers .item-offer .title-product.large {
-    margin-top: -20px; }
-  .new-offer-landing .content-offers .item-offer.dinamica .title-product {
+  .new-offer-landing .content-offers .item-offer .title-product {
     text-align: center;
     margin-bottom: 25px; }
-    .new-offer-landing .content-offers .item-offer.dinamica .title-product h3 {
+    .new-offer-landing .content-offers .item-offer .title-product h3 {
       font-size: 20px;
       text-transform: uppercase;
       line-height: 1;
       font-family: "HelveticaNeue77";
       max-height: 40px;
       overflow: hidden; }
-    .new-offer-landing .content-offers .item-offer.dinamica .title-product div {
+    .new-offer-landing .content-offers .item-offer .title-product div {
       font-size: 14px;
       font-family: "HelveticaNeueL45"; }
+    .new-offer-landing .content-offers .item-offer .title-product.sxh:before {
+      content: '';
+      position: absolute;
+      top: 5px;
+      right: 5px;
+      display: block;
+      width: 60px;
+      height: 50px;
+      background-image: url("https://www.tiendasjumbo.co/arquivos/label-sxh-new-landing.png");
+      background-repeat: no-repeat;
+      background-color: #fff;
+      border-radius: 5px; }
+    .new-offer-landing .content-offers .item-offer .title-product.large {
+      margin-top: -20px; }
+  .new-offer-landing .content-offers .item-offer .info {
+    min-height: 73px; }
   .new-offer-landing .content-offers .item-offer.dinamica .info .percentPricing {
     display: block;
     width: 100%;
@@ -774,6 +776,16 @@ b {
       width: 100%;
       text-align: left; }
       .new-offer-landing .content-offers .item-offer.dinamica .info .percentPricing .percentCreditCard .valuePercent.notop:before {
+        content: 'Hasta';
+        position: absolute;
+        display: block;
+        font-family: "HelveticaNeue75";
+        font-size: 11px;
+        line-height: 1em;
+        top: -8px;
+        left: 0px;
+        display: none !important; }
+      .new-offer-landing .content-offers .item-offer.dinamica .info .percentPricing .percentCreditCard .valuePercent:before {
         content: 'Hasta';
         position: absolute;
         display: block;
@@ -1076,6 +1088,44 @@ b {
     height: 30px !important; }
   .new-offer-landing .content-offers .item-offer.dinamica.simple .legals {
     margin-top: 15px; }
+  .new-offer-landing .content-offers .item-offer.producto .title-product {
+    margin-bottom: 10px; }
+    .new-offer-landing .content-offers .item-offer.producto .title-product div {
+      font-family: "HelveticaNeue77";
+      font-size: 17px; }
+  .new-offer-landing .content-offers .item-offer.producto .info .productPricing {
+    text-align: center; }
+    .new-offer-landing .content-offers .item-offer.producto .info .productPricing .regularPrice {
+      font-size: 19px;
+      font-family: "HelveticaNeueL45";
+      color: #464646; }
+    .new-offer-landing .content-offers .item-offer.producto .info .productPricing .bestPrice {
+      font-size: 29px;
+      font-family: "HelveticaNeue75";
+      color: #464646; }
+    .new-offer-landing .content-offers .item-offer.producto .info .productPricing .tarjeta {
+      color: #e88612;
+      margin-top: -5px; }
+      .new-offer-landing .content-offers .item-offer.producto .info .productPricing .tarjeta span {
+        font-size: 29px;
+        font-family: "HelveticaNeue75"; }
+      .new-offer-landing .content-offers .item-offer.producto .info .productPricing .tarjeta div {
+        font-size: 14px;
+        font-family: "HelveticaNeueL45";
+        position: relative;
+        margin-right: -30px; }
+        .new-offer-landing .content-offers .item-offer.producto .info .productPricing .tarjeta div:after {
+          content: '';
+          display: block;
+          width: 30px;
+          height: 20px;
+          background: url("https://jumbocolombiafood.vteximg.com.br/arquivos/label-tmc-new-landing.png") no-repeat;
+          background-size: 100%;
+          position: absolute;
+          top: 1px;
+          left: calc(50% - 95px); }
+  .new-offer-landing .content-offers .item-offer.producto .legals {
+    margin-top: 13px; }
   .new-offer-landing .content-offers .item-offer .legals {
     border-top: solid 1px #b2b2b2;
     margin-top: 30px; }

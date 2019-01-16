@@ -39,6 +39,21 @@ b {
                 }
             }
             .title-product {
+                text-align: center;
+                margin-bottom: 25px;
+                h3 {
+                    font-size: 20px;
+                    text-transform: uppercase;
+                    line-height: 1;
+                    font-family: $hel-b77;
+                    max-height: 40px; 
+                    overflow: hidden;
+                }
+                div {
+                    font-size: 14px;
+                    font-family: $hel-l45;
+                }
+
                 &.sxh {
                     &:before {
                         content: '';
@@ -59,23 +74,12 @@ b {
                     margin-top: -20px;
                 }
             }
+
+            .info{
+                min-height: 73px;
+            }
+
             &.dinamica {
-                .title-product {
-                    text-align: center;
-                    margin-bottom: 25px;
-                    h3 {
-                        font-size: 20px;
-                        text-transform: uppercase;
-                        line-height: 1;
-                        font-family: $hel-b77;
-                        max-height: 40px; 
-                        overflow: hidden;
-                    }
-                    div {
-                        font-size: 14px;
-                        font-family: $hel-l45;
-                    }
-                }
                 .info {
                     .percentPricing {
                         display: block;
@@ -121,7 +125,19 @@ b {
                                         line-height: 1em;
                                         top: -8px;
                                         left: 0px;
+                                        display: none !important;
                                     }
+                                }
+
+                                &:before {
+                                    content: 'Hasta';
+                                    position: absolute;
+                                    display: block;
+                                    font-family: $hel-b75;
+                                    font-size: 11px;
+                                    line-height: 1em;
+                                    top: -8px;
+                                    left: 0px;
                                 }
                             }
                             .labelPercent {
@@ -473,6 +489,65 @@ b {
                     }
                 }
             }
+
+            &.producto{
+                .title-product{
+                    margin-bottom: 10px;
+                    div{
+                        font-family: $hel-b77;
+                        font-size: 17px;
+                    }
+                }
+
+                .info{
+                    .productPricing{
+                        text-align: center;
+                        .regularPrice{
+                            font-size: 19px;
+                            font-family: $hel-l45;
+                            color: $price-color;
+                        }
+
+                        .bestPrice{
+                            font-size: 29px;
+                            font-family: $hel-b75;
+                            color: $price-color;
+                        }
+
+                        .tarjeta{
+                            color: $tmc-color;
+                            margin-top: -5px;
+                            span{
+                                font-size: 29px;
+                                font-family: $hel-b75;
+                            }
+
+                            div{
+                                font-size: 14px;
+                                font-family: $hel-l45;
+                                position: relative;
+                                margin-right: -30px;
+                                &:after{
+                                    content: '';
+                                    display: block;
+                                    width: 30px;
+                                    height: 20px;
+                                    background: url('https://jumbocolombiafood.vteximg.com.br/arquivos/label-tmc-new-landing.png') no-repeat;
+                                    background-size: 100%;
+                                    position: absolute;
+                                    top: 1px;
+                                    left: calc(50% - 95px);
+                                }
+                            }
+                        }
+                    }
+                }  
+                
+                .legals {
+                    margin-top: 13px;
+                }
+            }
+
             .legals {
                 border-top: solid 1px $border-color;
                 margin-top: 30px;
