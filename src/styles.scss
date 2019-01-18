@@ -818,24 +818,140 @@ b {
                     .info{
                         .percentPricing{
                             padding: 0 10px;
+                            max-height: 85px;
+                            position: relative;
                             .numberDynamic{
                                 width: 30%;
                                 display: inline-block;
-                                font-size: 45px;
+                                font-size: 52px;
                                 font-family: $hel-b77;
+                                line-height: 0.9;
+                                position: absolute;
+                                top: calc(50% - 33px);
                             }
 
                             .percentCreditCard{
                                 width: 65%;
                                 display: inline-block;
+                                float: right;
                                 .nameDynamic{
-                                    font-size: 17px;
+                                    font-size: 15px;
+                                    padding-bottom: 3px;
+                                    height: 37px;
+                                    position: relative;
+                                    span{
+                                        position: absolute;
+                                        width: 100%;
+                                        left: 0;
+                                        bottom: 5px;
+                                    }
                                 }
 
                                 .tycDynamic{
                                     width: 100%;
+                                    font-size: 18px;
                                 }
                             }
+
+                            .tycOffer{
+                                text-align: center;
+                                font-size: 18px;
+                                font-family: $hel-l45;
+                            }
+                        }
+                    }
+
+                    .legals{
+                        margin-top: 34px;
+                    }
+
+                    &.aval{
+                        .nameDynamic{
+                            color: $aval-color;
+                        }
+
+                        .numberDynamic{
+                            color: $aval-color;
+                        }
+                    }
+
+                    &.bbva{
+                        .nameDynamic{
+                            color: $bbva-color;
+                        }
+
+                        .numberDynamic{
+                            color: $bbva-color;
+                        }
+                    }
+
+                    &.colpatria{
+                        .nameDynamic{
+                            color: $colpatria-color;
+                        }
+
+                        .numberDynamic{
+                            color: $colpatria-color;
+                        }
+                    }
+
+                    &.visa{
+                        .nameDynamic{
+                            color: $visa-color;
+                        }
+
+                        .numberDynamic{
+                            color: $visa-color;
+                        }
+                    }
+
+                    &.bbog{
+                        .nameDynamic{
+                            color: $bbog-color;
+                        }
+
+                        .numberDynamic{
+                            color: $bbog-color;
+                        }
+                    }
+
+                    &.codensa{
+                        .nameDynamic{
+                            color: $codensa-color;
+                        }
+
+                        .numberDynamic{
+                            color: $codensa-color;
+                        }
+                    }
+
+                    &.itau{
+                        .nameDynamic{
+                            color: $itau-color;
+                        }
+
+                        .numberDynamic{
+                            color: $itau-color;
+                        }
+                    }
+
+                    &.aexpress{
+                        .nameDynamic{
+                            color: $aexpress-color;
+                        }
+
+                        .numberDynamic{
+                            color: $aexpress-color;
+                        }
+                    }
+
+                    &.mastercard{
+                        .nameDynamic{
+                            color: $mastercard-color-2;
+                        }
+
+                        .numberDynamic{
+                            color: $mastercard-color-2;
                         }
                     }
                 }

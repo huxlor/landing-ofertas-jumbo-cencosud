@@ -1129,19 +1129,76 @@ b {
   .new-offer-landing .content-offers .item-offer.dinamica-food.mastercard .info .percentCreditCard .infoDynamic span:first-child {
     color: #f59e00; }
   .new-offer-landing .content-offers .item-offer.dinamica-food.especial .info .percentPricing {
-    padding: 0 10px; }
+    padding: 0 10px;
+    max-height: 85px;
+    position: relative; }
     .new-offer-landing .content-offers .item-offer.dinamica-food.especial .info .percentPricing .numberDynamic {
       width: 30%;
       display: inline-block;
-      font-size: 45px;
-      font-family: "HelveticaNeue77"; }
+      font-size: 52px;
+      font-family: "HelveticaNeue77";
+      line-height: 0.9;
+      position: absolute;
+      top: calc(50% - 33px); }
     .new-offer-landing .content-offers .item-offer.dinamica-food.especial .info .percentPricing .percentCreditCard {
       width: 65%;
-      display: inline-block; }
+      display: inline-block;
+      float: right; }
       .new-offer-landing .content-offers .item-offer.dinamica-food.especial .info .percentPricing .percentCreditCard .nameDynamic {
-        font-size: 17px; }
+        font-size: 15px;
+        padding-bottom: 3px;
+        height: 37px;
+        position: relative; }
+        .new-offer-landing .content-offers .item-offer.dinamica-food.especial .info .percentPricing .percentCreditCard .nameDynamic span {
+          position: absolute;
+          width: 100%;
+          left: 0;
+          bottom: 5px; }
       .new-offer-landing .content-offers .item-offer.dinamica-food.especial .info .percentPricing .percentCreditCard .tycDynamic {
-        width: 100%; }
+        width: 100%;
+        font-size: 18px; }
+    .new-offer-landing .content-offers .item-offer.dinamica-food.especial .info .percentPricing .tycOffer {
+      text-align: center;
+      font-size: 18px;
+      font-family: "HelveticaNeueL45"; }
+  .new-offer-landing .content-offers .item-offer.dinamica-food.especial .legals {
+    margin-top: 34px; }
+  .new-offer-landing .content-offers .item-offer.dinamica-food.especial.aval .nameDynamic {
+    color: #255faa; }
+  .new-offer-landing .content-offers .item-offer.dinamica-food.especial.aval .numberDynamic {
+    color: #255faa; }
+  .new-offer-landing .content-offers .item-offer.dinamica-food.especial.bbva .nameDynamic {
+    color: #0b1d3d; }
+  .new-offer-landing .content-offers .item-offer.dinamica-food.especial.bbva .numberDynamic {
+    color: #0b1d3d; }
+  .new-offer-landing .content-offers .item-offer.dinamica-food.especial.colpatria .nameDynamic {
+    color: #cb2130; }
+  .new-offer-landing .content-offers .item-offer.dinamica-food.especial.colpatria .numberDynamic {
+    color: #cb2130; }
+  .new-offer-landing .content-offers .item-offer.dinamica-food.especial.visa .nameDynamic {
+    color: #25479f; }
+  .new-offer-landing .content-offers .item-offer.dinamica-food.especial.visa .numberDynamic {
+    color: #25479f; }
+  .new-offer-landing .content-offers .item-offer.dinamica-food.especial.bbog .nameDynamic {
+    color: #2a3e8b; }
+  .new-offer-landing .content-offers .item-offer.dinamica-food.especial.bbog .numberDynamic {
+    color: #2a3e8b; }
+  .new-offer-landing .content-offers .item-offer.dinamica-food.especial.codensa .nameDynamic {
+    color: #20adc1; }
+  .new-offer-landing .content-offers .item-offer.dinamica-food.especial.codensa .numberDynamic {
+    color: #20adc1; }
+  .new-offer-landing .content-offers .item-offer.dinamica-food.especial.itau .nameDynamic {
+    color: #302f8c; }
+  .new-offer-landing .content-offers .item-offer.dinamica-food.especial.itau .numberDynamic {
+    color: #302f8c; }
+  .new-offer-landing .content-offers .item-offer.dinamica-food.especial.aexpress .nameDynamic {
+    color: #017cd4; }
+  .new-offer-landing .content-offers .item-offer.dinamica-food.especial.aexpress .numberDynamic {
+    color: #017cd4; }
+  .new-offer-landing .content-offers .item-offer.dinamica-food.especial.mastercard .nameDynamic {
+    color: #f59e00; }
+  .new-offer-landing .content-offers .item-offer.dinamica-food.especial.mastercard .numberDynamic {
+    color: #f59e00; }
   .new-offer-landing .content-offers .item-offer.dinamica-food .legals p:last-child {
     padding-bottom: 11px; }
   .new-offer-landing .content-offers .item-offer.dinamica-food .legals p:first-child {
