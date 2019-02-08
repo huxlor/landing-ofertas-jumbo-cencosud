@@ -46,4 +46,1518 @@
     margin-left: -15px; 
 }
 
+@mixin titleLanding{ 
+    color: #323232;
+    font-size: 40px;
+    font-weight: 700;
+    border-bottom: 1px solid #d3d3d3;
+    padding-bottom: 15px;
+    margin-bottom: 34px;
+    position: relative;
+    &:after{
+        content: "";
+        width: 100px;
+        height: 4px;
+        position: absolute;
+        background-color: #1fa02e;
+        bottom: -1px;
+        left: 0;
+    }
+}
+
+@mixin fichasLanding {
+    .content-offers {
+        .item-offer {
+            border: solid 1px $border-color;
+            border-right: none;
+            max-width: 288px;
+            position: relative;
+            a {
+                text-decoration: none;
+                .link {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    top: 0;
+                    left: 0;
+                    z-index: 1;
+                }
+            }
+            .image-product {
+                margin: 23px 0 20px;
+                padding: 0 40px;
+                max-height: 204px;
+                min-height: 200px;
+                img {
+                    display: block;
+                    width: auto;
+                    max-width: 100%;
+                    height: auto;
+                    max-height: 204px;
+                    margin: 0 auto;
+                }
+
+                @media screen and (max-width: 760px) {
+                    width: 45%;
+                    display: inline-block;
+                    padding: 0 20px;
+                    min-height: 140px;
+                    margin-top: 35px;
+                }
+
+                @media screen and (max-width: 760px) {
+                    min-height: 100px;
+                }
+            }
+
+            .cont-information{
+                @media screen and (max-width: 760px) {
+                    width: 55%;
+                    display: inline-block;
+                    float: right;
+                }
+            }
+
+            .title-product {
+                text-align: center;
+                margin-bottom: 25px;
+                h3 {
+                    font-size: 20px;
+                    text-transform: uppercase;
+                    line-height: 1;
+                    font-family: $hel-b77;
+                    max-height: 40px; 
+                    overflow: hidden;
+                }
+                div {
+                    font-size: 14px;
+                    font-family: $hel-l45;
+                }
+
+                &.sxh {
+                    &:before {
+                        content: '';
+                        position: absolute;
+                        top: 5px;
+                        right: 5px;
+                        display: block;
+                        width: 60px;
+                        height: 50px;
+                        background-image: url('https://www.tiendasjumbo.co/arquivos/label-sxh-new-landing.png');
+                        background-repeat: no-repeat;
+                        background-color: $white-color;
+                        border-radius: 5px;
+                        @media screen and (max-width: 760px) {
+                            bottom: 15px;
+                            top: initial;
+                            left: 10px;
+                        }
+
+                        @media screen and (max-width: 400px) {
+                            bottom: 10px;
+                            top: initial;
+                            left: 10px;
+                            width: 40px;
+                            height: 30px;
+                            background-size: 100%;
+                        }
+                    }
+                }
+
+                &.large{
+                    margin-top: -20px;
+                    @media screen and (max-width: 760px) {
+                        margin-top: 40px;
+                        h3{
+                            max-height: 55px;
+                        }
+                    }
+
+                    @media screen and (max-width: 400px) {
+                        margin-top: 25px;
+                        h3{
+                            font-size: 14px;
+                        } 
+
+                        &:after{
+                            left: calc(20% - 20px) !important;
+                        }
+                    }
+                }
+
+                @media screen and (max-width: 760px) {
+                    text-align: left;
+                    margin-top: 55px;
+                    margin-bottom: 10px;
+                    font-size: 18px;
+                    h3{
+                        font-size: 18px;
+                    }
+
+                    div{
+                        font-size: 16px;
+                    }
+                }
+
+                @media screen and (max-width: 400px) {
+                    margin-top: 40px;
+                    h3{
+                        font-size: 16px;
+                    }
+
+                    div{
+                        font-size: 14px;
+                    }
+                }
+            }
+
+            .info{
+                min-height: 73px;
+            }
+
+            &.dinamica {
+                .info {
+                    .percentPricing {
+                        display: block;
+                        width: 100%;
+                        text-align: center;
+                        .percentCreditCard {
+                            .tjc-percent {
+                                display: inline-block;
+                                width: 51%;
+                                padding-left: 10px;
+                            }
+                            .regular-percent {
+                                display: inline-block;
+                                width: 47%;
+                                padding-left: 10px;
+                                .creditCard {
+                                    @include creditCardProperty();
+                                    &:before {
+                                        content: '%DTO';
+                                        font-family: $hel-b77;
+                                        font-size: 18px;
+                                        line-height: 1.2em;
+                                        @media screen and (max-width: 760px) {
+                                            font-size: 15px;
+                                        }
+                                    }
+                                }
+
+                                @media screen and (max-width: 760px) {
+                                    padding-left: 0px;
+                                }
+                            }
+                            //General Style
+                            .valuePercent {
+                                font-size: 60px;
+                                font-family: $hel-b75;
+                                display: inline-block;
+                                vertical-align: top;
+                                line-height: .9;
+                                position: relative;
+                                width: 100%;
+                                text-align: left;
+                                &.notop {
+                                    &:before {
+                                        content: 'Hasta';
+                                        position: absolute;
+                                        display: block;
+                                        font-family: $hel-b75;
+                                        font-size: 11px;
+                                        line-height: 1em;
+                                        top: -8px;
+                                        left: 0px;
+                                        display: none !important;
+                                    }
+                                }
+
+                                &:before {
+                                    content: 'Hasta';
+                                    position: absolute;
+                                    display: block;
+                                    font-family: $hel-b75;
+                                    font-size: 11px;
+                                    line-height: 1em;
+                                    top: -8px;
+                                    left: 0px;
+                                }
+
+                                @media screen and (max-width: 760px) {
+                                    font-size: 45px;
+                                }
+
+                                @media screen and (max-width: 400px) {
+                                    font-size: 35px;
+                                }
+                            }
+                            .labelPercent {
+                                font-size: 12px;
+                                font-family: $hel-l45;
+                                text-align: left;
+                                height: 15px;
+                                overflow: hidden;
+                                @media screen and (max-width: 400px) {
+                                    overflow: initial;
+                                }
+                            }
+                            //General Style
+                        }
+                    }
+                }
+
+                &.TarjetaCencosud {
+                    .info {
+                        .percentPricing {
+                            .percentCreditCard {
+                                .tjc-percent {
+                                    color: $tmc-color;
+                                    .creditCard {
+                                        display: inline-block;
+                                        vertical-align: top;
+                                        margin-left: -12px;
+                                        &:before {
+                                            @include creditCardBeforeProperty();
+                                            color: $tmc-color;
+                                            position: absolute;
+                                            top: 3px;
+                                        }
+                                        &:after {
+                                            content: '';
+                                            display: block;
+                                            width: 45px;
+                                            height: 30px;
+                                            background: url('https://jumbocolombiafood.vteximg.com.br/arquivos/label-tmc-new-landing.png') no-repeat;
+                                            background-size: 100%;
+                                            position: absolute;
+                                            bottom: 0;
+                                            @media screen and (max-width: 760px) {
+                                                width: 35px;
+                                                height: 21px;
+                                                right: 15px;
+                                            }
+
+                                            @media screen and (max-width: 400px) {
+                                                width: 25px;
+                                                height: 15px;
+                                                right: 7px;
+                                            }
+                                        }
+                                    }
+                                    .labelPercent {
+                                        font-size: 12px;
+                                        @include labelPercentProperty();
+                                        @media screen and (max-width: 400px) {
+                                            padding: 0 10px; 
+                                            font-size: 10px;
+                                        }
+                                    }
+                                }
+                                .regular-percent {
+                                    .creditCard {
+                                        @include creditCardProperty();
+                                        &:before {
+                                            @include creditCardBeforeProperty();
+                                        }
+                                    }
+                                    .labelPercent {
+                                        font-size: 12px;
+                                        @media screen and (max-width: 400px) {
+                                            padding: 0 10px; 
+                                            font-size: 10px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                &.aval {
+                    .info {
+                        .percentPricing {
+                            .percentCreditCard {
+                                .tjc-percent {
+                                    color: $aval-color;
+                                    .creditCard {
+                                        @include creditCardProperty();
+                                        &:before {
+                                            @include creditCardBeforeProperty();
+                                            color: $aval-color;
+                                        }
+                                    }
+                                    .labelPercent {
+                                        font-size: 12px;
+                                        @include labelPercentProperty(); 
+                                        @media screen and (max-width: 400px) {
+                                            padding: 0 10px; 
+                                            font-size: 10px;
+                                        }
+                                    }
+                                }
+                                .regular-percent {
+                                    .creditCard {
+                                        @include creditCardProperty();
+                                        &:before {
+                                            @include creditCardBeforeProperty();
+                                        }
+                                    }
+                                    .labelPercent {
+                                        font-size: 12px;
+                                        @media screen and (max-width: 400px) {
+                                            padding: 0 10px; 
+                                            font-size: 10px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                &.bbva {
+                    .info {
+                        .percentPricing {
+                            .percentCreditCard {
+                                .tjc-percent {
+                                    color: $bbva-color;
+                                    .creditCard {
+                                        @include creditCardProperty();
+                                        &:before {
+                                            @include creditCardBeforeProperty();
+                                            color: $bbva-color;
+                                        }
+                                    }
+                                }
+
+                                .labelPercent{
+                                    @include labelPercentProperty();
+                                    @media screen and (max-width: 760px) {
+                                        padding: 0 10px;
+                                        overflow: inherit;
+                                    }
+
+                                    @media screen and (max-width: 400px) {
+                                        padding: 0 10px;
+                                        font-size: 10px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                &.colpatria {
+                    .info {
+                        .percentPricing {
+                            .percentCreditCard {
+                                .tjc-percent {
+                                    color: $colpatria-color;
+                                    .creditCard {
+                                        @include creditCardProperty();
+                                        &:before {
+                                            @include creditCardBeforeProperty();
+                                            color: $colpatria-color;
+                                        }
+                                    }
+                                }
+
+                                .labelPercent{
+                                    @include labelPercentProperty();
+                                    @media screen and (max-width: 760px) {
+                                        padding: 0 10px;
+                                        overflow: inherit;
+                                    }
+
+                                    @media screen and (max-width: 400px) {
+                                        padding: 0 10px;
+                                        font-size: 10px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                &.visa {
+                    .info {
+                        .percentPricing {
+                            .percentCreditCard {
+                                .tjc-percent {
+                                    color: $visa-color;
+                                    .creditCard {
+                                        @include creditCardProperty();
+                                        &:before {
+                                            @include creditCardBeforeProperty();
+                                            color: $visa-color;
+                                        }
+                                    }
+                                }
+
+                                .labelPercent{
+                                    @include labelPercentProperty();
+                                    @media screen and (max-width: 760px) {
+                                        padding: 0 10px;
+                                        overflow: inherit;
+                                    }
+
+                                    @media screen and (max-width: 400px) {
+                                        padding: 0 10px;
+                                        font-size: 10px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                &.bbog {
+                    .info {
+                        .percentPricing {
+                            .percentCreditCard {
+                                .tjc-percent {
+                                    color: $bbog-color;
+                                    .creditCard {
+                                        @include creditCardProperty();
+                                        &:before {
+                                            @include creditCardBeforeProperty();
+                                            color: $bbog-color;
+                                        }
+                                    }
+                                }
+                                .labelPercent {
+                                    height: 30px !important;
+                                    @include labelPercentProperty();
+                                    @media screen and (max-width: 760px) {
+                                        padding: 0 10px;
+                                        overflow: inherit;
+                                    }
+
+                                    @media screen and (max-width: 400px) {
+                                        padding: 0 10px;
+                                        font-size: 10px;
+                                    }
+                                }
+
+                                .regular-percent{
+                                    @media screen and (max-width: 400px) {
+                                        float: right;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .legals {
+                        margin-top: 15px;
+                    }
+                }
+
+                &.codensa {
+                    .info {
+                        .percentPricing {
+                            .percentCreditCard {
+                                .tjc-percent {
+                                    color: $codensa-color;
+                                    .creditCard {
+                                        @include creditCardProperty();
+                                        &:before {
+                                            @include creditCardBeforeProperty();
+                                            color: $codensa-color;
+                                        }
+                                    }
+                                }
+                                .labelPercent {
+                                    height: 30px !important;
+                                    @include labelPercentProperty();
+                                    @media screen and (max-width: 760px) {
+                                        padding: 0 10px;
+                                        overflow: inherit;
+                                    }
+
+                                    @media screen and (max-width: 400px) {
+                                        padding: 0 10px;
+                                        font-size: 10px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .legals {
+                        margin-top: 15px;
+                    }
+                }
+
+                &.itau {
+                    .info {
+                        .percentPricing {
+                            .percentCreditCard {
+                                .tjc-percent {
+                                    color: $itau-color;
+                                    .creditCard {
+                                        @include creditCardProperty();
+                                        &:before {
+                                            @include creditCardBeforeProperty();
+                                            color: $itau-color;
+                                        }
+                                    }
+                                }
+
+                                .labelPercent {
+                                    @media screen and (max-width: 760px) {
+                                        padding: 0 10px;
+                                        overflow: inherit;
+                                        text-align: center;
+                                    }
+
+                                    @media screen and (max-width: 400px) {
+                                        // padding: 0 10px;
+                                        font-size: 10px;
+                                        text-align: center;
+                                    }
+                                }
+
+                                .regular-percent{
+                                    @media screen and (max-width: 400px) {
+                                        float: right;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                &.aexpress {
+                    .info {
+                        .percentPricing {
+                            .percentCreditCard {
+                                .tjc-percent {
+                                    color: $aexpress-color;
+                                    .creditCard {
+                                        @include creditCardProperty();
+                                        &:before {
+                                            @include creditCardBeforeProperty();
+                                            color: $aexpress-color;
+                                        }
+                                    }
+                                }
+
+                                .regular-percent{
+                                    @media screen and (max-width: 760px) {
+                                        float: right;
+                                    }
+                                }
+
+                                .labelPercent {
+                                    height: 30px !important;
+                                    @include labelPercentProperty();
+                                    @media screen and (max-width: 760px) {
+                                        padding: 0 10px;
+                                        overflow: inherit;
+                                    }
+
+                                    @media screen and (max-width: 400px) {
+                                        padding: 0 10px;
+                                        font-size: 10px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .legals {
+                        margin-top: 15px;
+                    }
+                }
+
+                &.mastercard {
+                    .info {
+                        .percentPricing {
+                            .percentCreditCard {
+                                .tjc-percent {
+                                    color: $mastercard-color-2;
+                                    .creditCard {
+                                        @include creditCardProperty();
+                                        &:before {
+                                            @include creditCardBeforeProperty();
+                                            color: $mastercard-color-2;
+                                        }
+                                    }
+                                }
+
+                                .regular-percent{
+                                    @media screen and (max-width: 400px) {
+                                        float: right;
+                                    }
+                                }
+
+                                .labelPercent {
+                                    height: 30px !important;
+                                    @include labelPercentProperty();
+                                    @media screen and (max-width: 760px) {
+                                        padding: 0 10px;
+                                        overflow: inherit;
+                                    }
+
+                                    @media screen and (max-width: 400px) {
+                                        padding: 0 10px;
+                                        font-size: 10px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .legals {
+                        margin-top: 15px;
+                    }
+                }
+
+                &.simple {
+                    .labelPercent {
+                        height: 30px !important;
+                    }
+                    .legals {
+                        margin-top: 15px;
+                        @media screen and (max-width: 760px) {
+                            margin-top: 10px;
+                        }
+                    }
+
+                    .percentCreditCard {
+                        @media screen and (max-width: 760px) {
+                            .tjc-percent{
+                                margin-left: -60px;
+                            }
+    
+                            .regular-percent{
+                                margin-left: -60px;
+                                .labelPercent{
+                                    text-align: center;
+                                    margin-left: -15px;
+                                    @media screen and (max-width: 400px) {
+                                        // padding: 0 10px; 
+                                        font-size: 10px;
+                                    }
+                                }
+                            }
+                        }
+
+                        @media screen and (max-width: 760px) {
+                            .regular-percent{
+                                margin-left: -30px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            &.producto{
+                .title-product{
+                    margin-bottom: 10px;
+                    div{
+                        font-family: $hel-b77;
+                        font-size: 17px;
+                    }
+                }
+
+                .info{
+                    .productPricing{
+                        text-align: center;
+                        .regularPrice{
+                            font-size: 19px;
+                            font-family: $hel-l45;
+                            color: $price-color;
+                            @media screen and (max-width: 760px) {
+                                font-size: 13px;
+                            }
+
+                            @media screen and (max-width: 400px) {
+                                font-size: 11px;
+                            }
+                        }
+
+                        .bestPrice{
+                            font-size: 29px;
+                            font-family: $hel-b75;
+                            color: $price-color;
+                            @media screen and (max-width: 760px) {
+                                font-size: 25px;
+                            }
+
+                            @media screen and (max-width: 400px) {
+                                font-size: 16px;
+                            }
+                        }
+
+                        .tarjeta{
+                            margin-top: -5px;
+                            span{
+                                font-size: 29px;
+                                font-family: $hel-b75;
+                                @media screen and (max-width: 760px) {
+                                    font-size: 25px;
+                                }
+
+                                @media screen and (max-width: 400px) {
+                                    font-size: 16px;
+                                }
+                            }
+
+                            div{
+                                font-size: 14px;
+                                @media screen and (max-width: 400px) {
+                                    font-size: 12px;
+                                }
+                            }
+                        }
+
+                        @media screen and (max-width: 760px) {
+                            text-align: left;
+                            margin-top: -10px;
+                        }
+                    }
+                }  
+                
+                .legals {
+                    margin-top: 12px;
+                }
+
+                &.TarjetaCencosud{
+                    .info{
+                        .productPricing{
+                            .tarjeta{
+                                color: $tmc-color;
+                                div{
+                                    font-size: 14px;
+                                    font-family: $hel-l45;
+                                    position: relative;
+                                    margin-right: -30px;
+                                    &:after{
+                                        content: '';
+                                        display: block;
+                                        width: 30px;
+                                        height: 20px;
+                                        background: url('https://jumbocolombiafood.vteximg.com.br/arquivos/label-tmc-new-landing.png') no-repeat;
+                                        background-size: 100%;
+                                        position: absolute;
+                                        top: 1px;
+                                        left: calc(50% - 95px);
+                                        @media screen and (max-width: 400px) {
+                                            left: calc(50% - 68px);
+                                        }
+                                    }
+
+                                    @media screen and (max-width: 760px) {
+                                        margin-right: 30px;
+                                        padding-left: 40px;
+                                    }
+
+                                    @media screen and (max-width: 400px) {
+                                        font-size: 12px;
+                                        padding-left: 35px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .legals {
+                        margin-top: 13px;
+                        @media screen and (max-width: 760px) {
+                            margin-top: 10px;
+                        }
+                    }
+                }
+
+                &.aval{
+                    .info{
+                        .productPricing{
+                            .tarjeta{
+                                color: $aval-color;
+                            }
+                        }
+                    }
+                }
+
+                &.bbva{
+                    .info{
+                        .productPricing{
+                            .tarjeta{
+                                color: $bbva-color;
+                            }
+                        }
+                    }
+                }
+
+                &.colpatria{
+                    .info{
+                        .productPricing{
+                            .tarjeta{
+                                color: $colpatria-color;
+                            }
+                        }
+                    }
+                }
+
+                &.visa{
+                    .info{
+                        .productPricing{
+                            .tarjeta{
+                                color: $visa-color;
+                            }
+                        }
+                    }
+                }
+
+                &.bbog{
+                    .info{
+                        .productPricing{
+                            .tarjeta{
+                                color: $bbog-color;
+                            }
+                        }
+                    }
+                }
+
+                &.codensa{
+                    .info{
+                        .productPricing{
+                            .tarjeta{
+                                color: $codensa-color;
+                            }
+                        }
+                    }
+                }
+
+                &.itau{
+                    .info{
+                        .productPricing{
+                            .tarjeta{
+                                color: $itau-color;
+                            }
+                        }
+                    }
+                }
+
+                &.aexpress{
+                    .info{
+                        .productPricing{
+                            .tarjeta{
+                                color: $aexpress-color;
+                            }
+                        }
+                    }
+                }
+
+                &.mastercard{
+                    .info{
+                        .productPricing{
+                            .tarjeta{
+                                color: $mastercard-color-2;
+                            }
+                        }
+                    }
+                }
+            }
+
+            &.dinamica-food{
+                .image-product{
+                    margin-bottom: 0px;
+                }
+
+                .title-product{
+                    h3{
+                        margin-bottom: 42px; 
+                        @media screen and (max-width: 760px) {
+                            margin-bottom: 10px; 
+                        }
+                    }
+                }
+
+                .info{
+                    padding-bottom: 6px;
+                    .percentPricing{
+                        .percentCreditCard{
+                            text-align: center;
+                            .nameDynamic{
+                                font-size: 20px;
+                                color: $price-color;
+                                font-family: $hel-b77;
+                                @media screen and (max-width: 760px) {
+                                    font-size: 15px;  
+                                }
+
+                                @media screen and (max-width: 400px) {
+                                    font-size: 11px;  
+                                }
+                            }
+
+                            .infoDynamic{
+                                font-size: 25px;
+                                font-family: 'Source Sans Pro';
+                                font-weight: bold;
+                                text-transform: uppercase;
+                                margin-top: 5px;
+                                span{
+                                    height: 30px;
+                                    line-height: 1.2;
+                                    &:first-child{
+                                        padding-right: 12px;
+                                        border-right: solid 2px gray;
+                                    }
+
+                                    &:last-child{
+                                        padding-left: 8px;
+                                    }
+
+                                    @media screen and (max-width: 400px) {
+                                        height: 24px;
+                                    }
+                                }
+
+                                @media screen and (max-width: 760px) {
+                                    font-size: 20px; 
+                                    margin-top: 5px; 
+                                }
+
+                                @media screen and (max-width: 400px) {
+                                    font-size: 15px;
+                                }
+                            }
+
+                            .tycDynamic{
+                                font-size: 20px;
+                                color: $price-color;
+                                font-family: $hel-b77;
+                                background-color: $legals-color;
+                                color: $white-color;
+                                width: 85%;
+                                margin: -2px auto 0;
+                                padding: 3px 0;
+                                @media screen and (max-width: 760px) {
+                                    font-size: 16px; 
+                                    margin-top: 0px; 
+                                    text-align: center;
+                                    margin-left: -12px;
+                                }
+
+                                @media screen and (max-width: 400px) {
+                                    font-size: 12px;
+                                    margin-left: -10px;
+                                }
+                            }
+                            //
+                            @media screen and (max-width: 760px) {
+                                text-align: left; 
+                            } 
+                        }
+                    }
+                }
+
+                &.aval{
+                    .info{
+                        .percentCreditCard{
+                            .nameDynamic{
+                                color: $aval-color;
+                            }
+
+                            .infoDynamic{
+                                span{
+                                    &:first-child{
+                                        color: $aval-color;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                &.bbva{
+                    .info{
+                        .percentCreditCard{
+                            .nameDynamic{
+                                color: $bbva-color;
+                            }
+
+                            .infoDynamic{
+                                span{
+                                    &:first-child{
+                                        color: $bbva-color;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                &.colpatria{
+                    .info{
+                        .percentCreditCard{
+                            .nameDynamic{
+                                color: $colpatria-color;
+                            }
+
+                            .infoDynamic{
+                                span{
+                                    &:first-child{
+                                        color: $colpatria-color;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                &.visa{
+                    .info{
+                        .percentCreditCard{
+                            .nameDynamic{
+                                color: $visa-color;
+                            }
+
+                            .infoDynamic{
+                                span{
+                                    &:first-child{
+                                        color: $visa-color;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                &.bbog{
+                    .info{
+                        .percentCreditCard{
+                            .nameDynamic{
+                                color: $bbog-color;
+                            }
+
+                            .infoDynamic{
+                                span{
+                                    &:first-child{
+                                        color: $bbog-color;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                &.codensa{
+                    .info{
+                        .percentCreditCard{
+                            .nameDynamic{
+                                color: $codensa-color;
+                            }
+
+                            .infoDynamic{
+                                span{
+                                    &:first-child{
+                                        color: $codensa-color;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                &.itau{
+                    .info{
+                        .percentCreditCard{
+                            .nameDynamic{
+                                color: $itau-color;
+                            }
+
+                            .infoDynamic{
+                                span{
+                                    &:first-child{
+                                        color: $itau-color;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                &.aexpress{
+                    .info{
+                        .percentCreditCard{
+                            .nameDynamic{
+                                color: $aexpress-color;
+                            }
+
+                            .infoDynamic{
+                                span{
+                                    &:first-child{
+                                        color: $aexpress-color;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                &.mastercard{
+                    .info{
+                        .percentCreditCard{
+                            .nameDynamic{
+                                color: $mastercard-color-2;
+                            }
+
+                            .infoDynamic{
+                                span{
+                                    &:first-child{
+                                        color: $mastercard-color-2;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                &.especial{
+                    .info{
+                        .percentPricing{
+                            padding: 0 10px;
+                            max-height: 85px;
+                            position: relative;
+                            .numberDynamic{
+                                width: 30%;
+                                display: inline-block;
+                                font-size: 52px;
+                                font-family: $hel-b77;
+                                line-height: 0.9;
+                                position: absolute;
+                                top: calc(50% - 33px); 
+                                @media screen and (max-width: 760px) {
+                                    font-size: 40px;
+                                    top: calc(50% - 15px);
+                                    left: -5px;
+                                }
+
+                                @media screen and (max-width: 400px) {
+                                    font-size: 30px;
+                                    top: calc(50% - 16px);
+                                    left: -12px;
+                                }
+                            }
+
+                            .percentCreditCard{
+                                width: 65%;
+                                // display: inline-block;
+                                float: right;
+                                .nameDynamic{
+                                    font-size: 15px;
+                                    padding-bottom: 3px;
+                                    height: 37px;
+                                    position: relative;
+                                    span{
+                                        position: absolute;
+                                        width: 100%;
+                                        left: 0;
+                                        bottom: 5px;
+                                        @media screen and (max-width: 760px) {
+                                            
+                                        }
+                                    }
+                                    @media screen and (max-width: 760px) {
+                                        font-size: 11px;
+                                        left: -12px;
+                                        text-align: center;
+                                    }
+                                }
+
+                                .tycDynamic{
+                                    width: 100%;
+                                    font-size: 18px;
+                                    @media screen and (max-width: 760px) {
+                                        font-size: 12px;
+                                    }
+
+                                    @media screen and (max-width: 400px) {
+                                        font-size: 10px;
+                                    }
+                                }
+                            }
+
+                            .tycOffer{
+                                text-align: center;
+                                font-size: 18px;
+                                font-family: $hel-l45;
+                                @media screen and (max-width: 760px) {
+                                    font-size: 13px;
+                                    text-align: left;
+                                    margin-left: -14px;
+                                }
+
+                                @media screen and (max-width: 400px) {
+                                    font-size: 10px;
+                                }
+                            }
+                        }
+                    }
+
+                    .legals{
+                        margin-top: 34px;
+                        @media screen and (max-width: 760px) {
+                            margin-top: 10px;
+                            p{
+                                &:first-child{
+                                    padding-top: 20px;
+                                }
+                            }
+                        }
+
+                        @media screen and (max-width: 400px) {
+                            margin-top: 10px;
+                            p{
+                                &:first-child{
+                                    padding-top: 15px;
+                                }
+                            }
+                        }
+                    }
+
+                    &.aval{
+                        .nameDynamic{
+                            color: $aval-color;
+                        }
+
+                        .numberDynamic{
+                            color: $aval-color;
+                        }
+                    }
+
+                    &.bbva{
+                        .nameDynamic{
+                            color: $bbva-color;
+                        }
+
+                        .numberDynamic{
+                            color: $bbva-color;
+                        }
+                    }
+
+                    &.colpatria{
+                        .nameDynamic{
+                            color: $colpatria-color;
+                        }
+
+                        .numberDynamic{
+                            color: $colpatria-color;
+                        }
+                    }
+
+                    &.visa{
+                        .nameDynamic{
+                            color: $visa-color;
+                        }
+
+                        .numberDynamic{
+                            color: $visa-color;
+                        }
+                    }
+
+                    &.bbog{
+                        .nameDynamic{
+                            color: $bbog-color;
+                        }
+
+                        .numberDynamic{
+                            color: $bbog-color;
+                        }
+                    }
+
+                    &.codensa{
+                        .nameDynamic{
+                            color: $codensa-color;
+                        }
+
+                        .numberDynamic{
+                            color: $codensa-color;
+                        }
+                    }
+
+                    &.itau{
+                        .nameDynamic{
+                            color: $itau-color;
+                        }
+
+                        .numberDynamic{
+                            color: $itau-color;
+                        }
+                    }
+
+                    &.aexpress{
+                        .nameDynamic{
+                            color: $aexpress-color;
+                        }
+
+                        .numberDynamic{
+                            color: $aexpress-color;
+                        }
+                    }
+
+                    &.mastercard{
+                        .nameDynamic{
+                            color: $mastercard-color-2;
+                        }
+
+                        .numberDynamic{
+                            color: $mastercard-color-2;
+                        }
+                    }
+                }
+
+                .legals{
+                    p {
+                        &:last-child {
+                            padding-bottom: 11px;
+                        }
+                        &:first-child {
+                            padding-top: 12px;
+                            @media screen and (max-width: 760px) {
+                                padding-top: 20px;
+                            }
+
+                            @media screen and (max-width: 400px) {
+                                padding-top: 12px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .legals {
+                border-top: solid 1px $border-color;
+                margin-top: 30px;
+                p {
+                    text-align: center;
+                    font-family: 'Source Sans Pro';
+                    font-size: 13px;
+                    color: $legals-color;
+                    &:last-child {
+                        padding-top: 0;
+                        padding-bottom: 20px;
+                    }
+                    &:first-child {
+                        padding-top: 20px;
+                    }
+
+                    @media screen and (max-width: 400px) {
+                        width: 80%;
+                        float: right;
+                        font-size: 10px;
+                        &:last-child {
+                            padding-bottom: 10px;
+                        }
+                        &:first-child {
+                            padding-top: 10px;
+                        }
+                    }
+                }
+
+                @media screen and (max-width: 760px) {
+                    margin-top: 10px;
+                }
+            }
+            &:last-child {
+                border-right: solid 1px $border-color;
+            }
+            //Labels
+            &.aval{
+                .title-product {
+                    &:after {
+                        @include labelProperty();
+                        background-image: url('https://www.tiendasjumbo.co/arquivos/label-aval-bg-new-landing.png');
+                    }
+                }
+            }
+
+            &.bbva{
+                .title-product {
+                    &:after {
+                        @include labelProperty();
+                        background-image: url('https://www.tiendasjumbo.co/arquivos/label-bbva-bg-new-landing.png');
+                    }
+                }
+            }
+
+            &.colpatria{
+                .title-product {
+                    &:after {
+                        @include labelProperty();
+                        background-image: url('https://www.tiendasjumbo.co/arquivos/label-colpatria-bg-new-landing-v2.png');
+                    }
+                }
+            }
+
+            &.visa{
+                .title-product {
+                    &:after {
+                        @include labelProperty();
+                        background-image: url('https://www.tiendasjumbo.co/arquivos/label-visa-bg-new-landing.png');
+                    }
+                }
+            }
+
+            &.bbog{
+                .title-product {
+                    &:after {
+                        @include labelProperty();
+                        background-image: url('https://www.tiendasjumbo.co/arquivos/label-bbog-bg-new-landing.png');
+                    }
+                }
+            }
+
+            &.codensa{
+                .title-product {
+                    &:after {
+                        @include labelProperty();
+                        background-image: url('https://www.tiendasjumbo.co/arquivos/label-codensa-bg-new-landing.png');
+                    }
+                }
+            }
+
+            &.itau{
+                .title-product {
+                    &:after {
+                        @include labelProperty();
+                        background-image: url('https://www.tiendasjumbo.co/arquivos/label-itau-bg-new-landing.png');
+                    }
+                }
+            }
+
+            &.aexpress{
+                .title-product {
+                    &:after {
+                        @include labelProperty();
+                        background-image: url('https://www.tiendasjumbo.co/arquivos/label-aexpress-bg-new-landing.png');
+                    }
+                }
+            }
+
+            &.mastercard{
+                .title-product {
+                    &:after {
+                        @include labelProperty();
+                        background-image: url('https://www.tiendasjumbo.co/arquivos/label-mastercard-bg-new-landing.png');
+                    }
+                }
+            }
+            //Mobile
+            @media screen and (max-width: 760px) {
+                max-width: 100%;
+                border-right: solid 1px $border-color;
+                min-height: 289px;
+            }
+
+            @media screen and (max-width: 400px) {
+                max-width: 100%;
+                border-right: solid 1px $border-color;
+                min-height: 222px;
+            }
+        }
+    }
+}
+
 //Mixins
