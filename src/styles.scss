@@ -6,44 +6,101 @@ b {
     font-family: $hel-b77; 
 }
 
+.nopadding{
+    padding: 0;
+}
+
 .new-offer-landing {
     font-family: 'Source Sans Pro', sans-serif !important;
+    position: relative;
     // Mixin with all styles only for the dinamics and payment methods
     @include fichasLanding();
     //General styles of the Landing Page
+    #btn-goTop{
+        position: fixed;
+        z-index: 100;
+        bottom: 50px;
+        right: 50px;
+        width: 50px;
+        height: 50px;
+        background-color: $text-black;
+        -moz-transform: rotate(270deg);
+        -webkit-transform: rotate(270deg);
+        -o-transform: rotate(270deg);
+        -ms-transform: rotate(270deg);
+        transform: rotate(270deg);
+        svg{
+            width: 25px;
+            margin: 0 auto;
+            display: block;
+        }
+        @media screen and (max-width: 760px) {
+            bottom: 10px;
+            right: 10px;
+        }
+    }
+
     .cont_menu{
         margin-top: 25px;
         &__item{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-wrap: nowrap;
-            width: 100%;
             padding: 20px;
             background-color: $bg-gray-color; 
+            position: relative;
             &__items{
-                width: 20%;
-                text-align: center;
                 button{
+                    text-align: center;
                     margin: 0 auto;
                     font-size: 20px;
                     color: $text-black;
+                    width: 100%;
                     &:hover{
                         color: $text-green;
                     }
+
+                    &.tecno{
+                        border-left: solid 1px #202020;
+                    }
+
+                    &.electro{
+                        border-left: solid 1px #202020; 
+                        border-right: solid 1px #202020;
+                    }
+
+                    &.otras{
+                        border-right: solid 1px #202020;
+                    }
+
+                    @media screen and (max-width: 760px) {
+                        font-size: 14px;
+                        // &.tv{
+                        //     border-left: solid 1px #202020;
+                        // }
+
+                        // &.mercado{
+                        //     border-right: solid 1px #202020;
+                        // }
+                    }
+
+                    @media screen and (max-width: 400px) {
+                        font-size: 11px;
+                    }
+                }
+            }  
+            
+            .btn-menu{
+                font-size: 45px;   
+                position: absolute; 
+                top: calc(50% - 45px);
+                &.slick-prev{
+                    left: 5px;
                 }
 
-                &:nth-child(2){
-                    border-left: solid 1px #202020; 
+                &.slick-next{
+                    right: 5px;
                 }
 
-                &:nth-child(3){
-                    border-left: solid 1px #202020; 
-                    border-right: solid 1px #202020; 
-                }
-
-                &:nth-child(4){ 
-                    border-right: solid 1px #202020; 
+                &.slick-disabled{
+                    opacity: 0.2;
                 }
             }
         }
@@ -53,6 +110,58 @@ b {
         margin-top: 80px;
         &__title{
             @include titleLanding();
+        }
+    }
+
+    .cont-sxh{
+        min-width: initial;
+        margin: 50px 0;
+        position: relative;
+        min-height: 180px;
+        img{
+            width: 100%;
+        }
+
+        a{
+            .link{
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                z-index: 100;
+                background-color: transparent;
+            }
+        }
+
+        &__left{
+            position: relative;
+            p{
+                position: absolute;
+                bottom: 5px;
+                width: 100%;
+                font-size: 12px;
+                text-align: center;
+                @media screen and (max-width: 760px) {
+                    font-size: 9px;
+                }
+            }
+
+            &__countdown{
+                position: absolute;
+                bottom: 12px;
+                font-size: 70px;
+                right: calc(50% - 165px);
+                color: $white-color;
+                text-shadow: 3px 3px #7b7b7b5e;
+                @media screen and (max-width: 760px) {
+                    font-size: 55px;
+                }
+
+                @media screen and (max-width: 400px) {
+                    font-size: 35px;
+                    right: calc(50% - 100px);
+                    bottom: 20px;
+                }
+            }
         }
     }
 
@@ -93,7 +202,12 @@ b {
         &__tyc{
             margin-top: 80px;
             font-size: 27px;
-            text-align: center;
+            text-align: center; 
+            @media screen and (max-width: 760px) {
+                margin-top: 40px;
+                font-size: 18px;
+                padding: 0 5%; 
+            }
         }
     }
 

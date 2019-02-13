@@ -13,35 +13,43 @@
 <body>
         <section class="new-offer-landing wrapper">
             <div class="center">
+                <button id="btn-goTop" title="Ir arriba">
+                    <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        viewBox="0 0 31.49 31.49" style="enable-background:new 0 0 31.49 31.49;" xml:space="preserve">
+                        <path style="fill:#FFF;" d="M21.205,5.007c-0.429-0.444-1.143-0.444-1.587,0c-0.429,0.429-0.429,1.143,0,1.571l8.047,8.047H1.111
+                        C0.492,14.626,0,15.118,0,15.737c0,0.619,0.492,1.127,1.111,1.127h26.554l-8.047,8.032c-0.429,0.444-0.429,1.159,0,1.587
+                        c0.444,0.444,1.159,0.444,1.587,0l9.952-9.952c0.444-0.429,0.444-1.143,0-1.571L21.205,5.007z"/>
+                   </svg>
+                </button>
                 <div class="cont_menu">
                     <ul class="cont_menu__item">
                         <li class="cont_menu__item__items">
-                            <button>
-                                <div class="font-icn-cat cat-lavadoras"></div>
+                            <button class="tv" id="btn-tv" title="Ver Televisores">
+                                <span class="icon-home icon-home-tecnologia"></span>
                                 Televisores
                             </button>
                         </li>
                         <li class="cont_menu__item__items">
-                            <button>
-                                <div class="font-icn-cat cat-lavadoras"></div> 
+                            <button class="tecno" id="btn-tecno" title="Ver Tecnología">
+                                <span class="icon-home icon-home-tecnologia"></span> 
                                 Tecnología
                             </button>
                         </li>
                         <li class="cont_menu__item__items">
-                            <button>
-                                <div class="font-icn-cat cat-lavadoras"></div>
+                            <button class="electro" id="btn-electro" title="Ver Electro y Cocina">
+                                <span class="icon-home icon-home-electrodomesticos"></span>
                                 Electro y Cocina
                             </button>
                         </li>
                         <li class="cont_menu__item__items">
-                            <button>
-                                <div class="font-icn-cat cat-muebles-y-colchones"></div>
+                            <button class="otras"  id="btn-otras" title="Ver Otras Categorías">
+                                <span class="icon-home icon-home-hogar-y-decoracion"></span>
                                 Otras Categorías
                             </button>
                         </li>
                         <li class="cont_menu__item__items">
-                            <button>
-                                <div class="font-icn-cat cat-lavadoras"></div>
+                            <button id="btn-mercado" class="" title="Ver Mercado">
+                                <span class="icon-home icon-home-supermercado"></span>
                                 Mercado
                             </button>
                         </li>
@@ -50,6 +58,25 @@
 
                 <div class="cont_destacados">
                     <div class="cont_destacados__title">Destacados</div>
+                </div>
+                <!-- v-if="showDiv == true" -->
+                <div id="sxh" class="container-fluid cont-sxh"> 
+                    <div class="row">
+                        <a href="https://jumbocolombiafood.vteximg.com.br" title="Ver más"><span class="link"></span></a>
+                        <div class="cont-sxh__left col-xs-12 col-sm-12 col-md-4 col-lg-4 nopadding">
+                            <img src="https://jumbocolombiafood.vteximg.com.br/arquivos/BnrAc-Desktop-SXH-Landing-Ofertas_01-v2.jpg" alt="Solo por Hoy">
+                            <p>Válido solo por el 9/Ene de 2019 y/o hasta agotar existencias. 30 Und disp. Exclusivo Online</p>
+                            <div class="cont-sxh__left__countdown">
+                                <span id="hours">00</span>:<span id="minutes">00</span>:<span id="seconds">00</span>
+                            </div>
+                        </div>
+                        <div class="cont-sxh__center col-xs-12 col-sm-12 col-md-4 col-lg-4 nopadding">
+                            <img src="https://jumbocolombiafood.vteximg.com.br/arquivos/BnrAc-Desktop-SXH-Landing-Ofertas_02.jpg" alt="Descuento Especial">
+                        </div>
+                        <div class="cont-sxh__right col-xs-12 col-sm-12 col-md-4 col-lg-4 nopadding">
+                            <img src="https://jumbocolombiafood.vteximg.com.br/arquivos/BnrAc-Desktop-SXH-Landing-Ofertas_03-v2.jpg" alt="Comprar Ahora">
+                        </div>
+                    </div>
                 </div>
 
                 <div class="cont_televisores">
@@ -973,11 +1000,12 @@
                     <div class="cont_interes__title">Te podría interesar</div>
                 </div>
 
-            </div>
+            </div> 
         </section>
 
 
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/vue"></script> -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script type="text/javascript" src="../dist/main-ldg-ofertas-new.js"></script>
 </body>

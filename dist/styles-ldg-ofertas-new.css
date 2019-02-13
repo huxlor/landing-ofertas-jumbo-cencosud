@@ -690,8 +690,12 @@
 b {
   font-family: "HelveticaNeue77"; }
 
+.nopadding {
+  padding: 0; }
+
 .new-offer-landing {
-  font-family: 'Source Sans Pro', sans-serif !important; }
+  font-family: 'Source Sans Pro', sans-serif !important;
+  position: relative; }
   .new-offer-landing .content-offers .item-offer {
     border: solid 1px #b2b2b2;
     border-right: none;
@@ -1402,16 +1406,22 @@ b {
             font-size: 12px;
             padding-left: 35px; } }
     .new-offer-landing .content-offers .item-offer.producto.TarjetaCencosud .legals {
-      margin-top: 13px; }
+      margin-top: 11px; }
       @media screen and (max-width: 760px) {
         .new-offer-landing .content-offers .item-offer.producto.TarjetaCencosud .legals {
           margin-top: 10px; } }
     .new-offer-landing .content-offers .item-offer.producto.aval .info .productPricing .tarjeta {
       color: #255faa; }
+    .new-offer-landing .content-offers .item-offer.producto.aval .legals {
+      margin-top: 11px; }
     .new-offer-landing .content-offers .item-offer.producto.bbva .info .productPricing .tarjeta {
       color: #0b1d3d; }
+    .new-offer-landing .content-offers .item-offer.producto.bbva .legals {
+      margin-top: 10px; }
     .new-offer-landing .content-offers .item-offer.producto.colpatria .info .productPricing .tarjeta {
       color: #cb2130; }
+    .new-offer-landing .content-offers .item-offer.producto.colpatria .legals {
+      margin-top: 11px; }
     .new-offer-landing .content-offers .item-offer.producto.visa .info .productPricing .tarjeta {
       color: #25479f; }
     .new-offer-landing .content-offers .item-offer.producto.bbog .info .productPricing .tarjeta {
@@ -1589,7 +1599,7 @@ b {
           .new-offer-landing .content-offers .item-offer.dinamica-food.especial .info .percentPricing .tycOffer {
             font-size: 10px; } }
     .new-offer-landing .content-offers .item-offer.dinamica-food.especial .legals {
-      margin-top: 34px; }
+      margin-top: 32px; }
       @media screen and (max-width: 760px) {
         .new-offer-landing .content-offers .item-offer.dinamica-food.especial .legals {
           margin-top: 10px; }
@@ -1827,32 +1837,64 @@ b {
         max-width: 100%;
         border-right: solid 1px #b2b2b2;
         min-height: 222px; } }
+  .new-offer-landing #btn-goTop {
+    position: fixed;
+    z-index: 100;
+    bottom: 50px;
+    right: 50px;
+    width: 50px;
+    height: 50px;
+    background-color: #333;
+    -moz-transform: rotate(270deg);
+    -webkit-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    transform: rotate(270deg); }
+    .new-offer-landing #btn-goTop svg {
+      width: 25px;
+      margin: 0 auto;
+      display: block; }
+    @media screen and (max-width: 760px) {
+      .new-offer-landing #btn-goTop {
+        bottom: 10px;
+        right: 10px; } }
   .new-offer-landing .cont_menu {
     margin-top: 25px; }
     .new-offer-landing .cont_menu__item {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-wrap: nowrap;
-      width: 100%;
       padding: 20px;
-      background-color: #f5f5f5; }
-      .new-offer-landing .cont_menu__item__items {
-        width: 20%;
-        text-align: center; }
-        .new-offer-landing .cont_menu__item__items button {
-          margin: 0 auto;
-          font-size: 20px;
-          color: #333; }
-          .new-offer-landing .cont_menu__item__items button:hover {
-            color: #1fa02e; }
-        .new-offer-landing .cont_menu__item__items:nth-child(2) {
+      background-color: #f5f5f5;
+      position: relative; }
+      .new-offer-landing .cont_menu__item__items button {
+        text-align: center;
+        margin: 0 auto;
+        font-size: 20px;
+        color: #333;
+        width: 100%; }
+        .new-offer-landing .cont_menu__item__items button:hover {
+          color: #1fa02e; }
+        .new-offer-landing .cont_menu__item__items button.tecno {
           border-left: solid 1px #202020; }
-        .new-offer-landing .cont_menu__item__items:nth-child(3) {
+        .new-offer-landing .cont_menu__item__items button.electro {
           border-left: solid 1px #202020;
           border-right: solid 1px #202020; }
-        .new-offer-landing .cont_menu__item__items:nth-child(4) {
+        .new-offer-landing .cont_menu__item__items button.otras {
           border-right: solid 1px #202020; }
+        @media screen and (max-width: 760px) {
+          .new-offer-landing .cont_menu__item__items button {
+            font-size: 14px; } }
+        @media screen and (max-width: 400px) {
+          .new-offer-landing .cont_menu__item__items button {
+            font-size: 11px; } }
+      .new-offer-landing .cont_menu__item .btn-menu {
+        font-size: 45px;
+        position: absolute;
+        top: calc(50% - 45px); }
+        .new-offer-landing .cont_menu__item .btn-menu.slick-prev {
+          left: 5px; }
+        .new-offer-landing .cont_menu__item .btn-menu.slick-next {
+          right: 5px; }
+        .new-offer-landing .cont_menu__item .btn-menu.slick-disabled {
+          opacity: 0.2; }
   .new-offer-landing .cont_destacados {
     margin-top: 80px; }
     .new-offer-landing .cont_destacados__title {
@@ -1871,6 +1913,48 @@ b {
         background-color: #1fa02e;
         bottom: -1px;
         left: 0; }
+      @media screen and (max-width: 760px) {
+        .new-offer-landing .cont_destacados__title {
+          font-size: 28px; } }
+  .new-offer-landing .cont-sxh {
+    min-width: initial;
+    margin: 50px 0;
+    position: relative;
+    min-height: 180px; }
+    .new-offer-landing .cont-sxh img {
+      width: 100%; }
+    .new-offer-landing .cont-sxh a .link {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      z-index: 100;
+      background-color: transparent; }
+    .new-offer-landing .cont-sxh__left {
+      position: relative; }
+      .new-offer-landing .cont-sxh__left p {
+        position: absolute;
+        bottom: 5px;
+        width: 100%;
+        font-size: 12px;
+        text-align: center; }
+        @media screen and (max-width: 760px) {
+          .new-offer-landing .cont-sxh__left p {
+            font-size: 9px; } }
+      .new-offer-landing .cont-sxh__left__countdown {
+        position: absolute;
+        bottom: 12px;
+        font-size: 70px;
+        right: calc(50% - 165px);
+        color: #fff;
+        text-shadow: 3px 3px #7b7b7b5e; }
+        @media screen and (max-width: 760px) {
+          .new-offer-landing .cont-sxh__left__countdown {
+            font-size: 55px; } }
+        @media screen and (max-width: 400px) {
+          .new-offer-landing .cont-sxh__left__countdown {
+            font-size: 35px;
+            right: calc(50% - 100px);
+            bottom: 20px; } }
   .new-offer-landing .cont_televisores {
     margin-bottom: 80px; }
     .new-offer-landing .cont_televisores__title {
@@ -1889,6 +1973,9 @@ b {
         background-color: #1fa02e;
         bottom: -1px;
         left: 0; }
+      @media screen and (max-width: 760px) {
+        .new-offer-landing .cont_televisores__title {
+          font-size: 28px; } }
   .new-offer-landing .cont_electro {
     margin-bottom: 80px; }
     .new-offer-landing .cont_electro__title {
@@ -1907,6 +1994,9 @@ b {
         background-color: #1fa02e;
         bottom: -1px;
         left: 0; }
+      @media screen and (max-width: 760px) {
+        .new-offer-landing .cont_electro__title {
+          font-size: 28px; } }
   .new-offer-landing .cont_tecno {
     margin-bottom: 80px; }
     .new-offer-landing .cont_tecno__title {
@@ -1925,6 +2015,9 @@ b {
         background-color: #1fa02e;
         bottom: -1px;
         left: 0; }
+      @media screen and (max-width: 760px) {
+        .new-offer-landing .cont_tecno__title {
+          font-size: 28px; } }
   .new-offer-landing .cont_otras {
     margin-bottom: 80px; }
     .new-offer-landing .cont_otras__title {
@@ -1943,6 +2036,9 @@ b {
         background-color: #1fa02e;
         bottom: -1px;
         left: 0; }
+      @media screen and (max-width: 760px) {
+        .new-offer-landing .cont_otras__title {
+          font-size: 28px; } }
   .new-offer-landing .cont_mercado {
     margin-bottom: 80px; }
     .new-offer-landing .cont_mercado__title {
@@ -1961,10 +2057,18 @@ b {
         background-color: #1fa02e;
         bottom: -1px;
         left: 0; }
+      @media screen and (max-width: 760px) {
+        .new-offer-landing .cont_mercado__title {
+          font-size: 28px; } }
     .new-offer-landing .cont_mercado__tyc {
       margin-top: 80px;
       font-size: 27px;
       text-align: center; }
+      @media screen and (max-width: 760px) {
+        .new-offer-landing .cont_mercado__tyc {
+          margin-top: 40px;
+          font-size: 18px;
+          padding: 0 5%; } }
   .new-offer-landing .cont_interes {
     margin-bottom: 80px; }
     .new-offer-landing .cont_interes__title {
@@ -1983,4 +2087,7 @@ b {
         background-color: #1fa02e;
         bottom: -1px;
         left: 0; }
+      @media screen and (max-width: 760px) {
+        .new-offer-landing .cont_interes__title {
+          font-size: 28px; } }
 
