@@ -103,6 +103,14 @@ function categorySlick(category){
             }
             },
             {
+            breakpoint: 1133,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                infinite: true,
+            }
+            },
+            {
             breakpoint: 1024,
             settings: {
                 slidesToShow: 3,

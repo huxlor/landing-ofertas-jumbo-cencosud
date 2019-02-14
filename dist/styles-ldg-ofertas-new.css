@@ -1961,7 +1961,8 @@ b {
         @media screen and (min-width: 992px) and (max-width: 1440px) {
           .new-offer-landing .cont-sxh__left__countdown {
             font-size: 4vw;
-            right: 10%; } }
+            right: 10%;
+            bottom: 12px; } }
         @media screen and (max-width: 991px) {
           .new-offer-landing .cont-sxh__left__countdown {
             font-size: 14vw;
