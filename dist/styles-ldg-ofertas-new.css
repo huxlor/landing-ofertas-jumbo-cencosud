@@ -698,9 +698,11 @@ b {
   position: relative; }
   .new-offer-landing .content-offers .item-offer {
     border: solid 1px #b2b2b2;
-    border-right: none;
-    max-width: 288px;
     position: relative; }
+    @media screen and (min-width: 1440px) {
+      .new-offer-landing .content-offers .item-offer {
+        max-width: 288px;
+        border-right: none; } }
     .new-offer-landing .content-offers .item-offer a {
       text-decoration: none; }
       .new-offer-landing .content-offers .item-offer a .link {
@@ -1879,6 +1881,9 @@ b {
           border-right: solid 1px #202020; }
         .new-offer-landing .cont_menu__item__items button.otras {
           border-right: solid 1px #202020; }
+        .new-offer-landing .cont_menu__item__items button span {
+          display: block;
+          font-size: 30px; }
         @media screen and (max-width: 760px) {
           .new-offer-landing .cont_menu__item__items button {
             font-size: 14px; } }
@@ -1937,24 +1942,41 @@ b {
         width: 100%;
         font-size: 12px;
         text-align: center; }
+        @media screen and (min-width: 992px) and (max-width: 1440px) {
+          .new-offer-landing .cont-sxh__left p {
+            font-size: .8vw; } }
         @media screen and (max-width: 760px) {
           .new-offer-landing .cont-sxh__left p {
             font-size: 9px; } }
+        @media screen and (max-width: 400px) {
+          .new-offer-landing .cont-sxh__left p {
+            font-size: 7px; } }
       .new-offer-landing .cont-sxh__left__countdown {
         position: absolute;
-        bottom: 12px;
-        font-size: 70px;
-        right: calc(50% - 165px);
+        bottom: 20px;
+        font-size: 60px;
+        right: calc(45% - 155px);
         color: #fff;
         text-shadow: 3px 3px #7b7b7b5e; }
+        @media screen and (min-width: 992px) and (max-width: 1440px) {
+          .new-offer-landing .cont-sxh__left__countdown {
+            font-size: 4vw;
+            right: 10%; } }
+        @media screen and (max-width: 991px) {
+          .new-offer-landing .cont-sxh__left__countdown {
+            font-size: 14vw;
+            right: calc(10%);
+            bottom: 5%; } }
         @media screen and (max-width: 760px) {
           .new-offer-landing .cont-sxh__left__countdown {
-            font-size: 55px; } }
+            font-size: 13.5vw;
+            right: calc(10%);
+            bottom: 10%; } }
         @media screen and (max-width: 400px) {
           .new-offer-landing .cont-sxh__left__countdown {
-            font-size: 35px;
-            right: calc(50% - 100px);
-            bottom: 20px; } }
+            font-size: 11vw;
+            right: calc(15%);
+            bottom: 10%; } }
   .new-offer-landing .cont_televisores {
     margin-bottom: 80px; }
     .new-offer-landing .cont_televisores__title {

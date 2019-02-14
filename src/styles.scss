@@ -70,6 +70,11 @@ b {
                         border-right: solid 1px #202020;
                     }
 
+                    span{
+                        display: block;
+                        font-size: 30px;
+                    }
+
                     @media screen and (max-width: 760px) {
                         font-size: 14px;
                         // &.tv{
@@ -140,26 +145,47 @@ b {
                 width: 100%;
                 font-size: 12px;
                 text-align: center;
+                @media screen and (min-width: 992px) and (max-width: 1440px){
+                    font-size: .8vw;
+                }
+
                 @media screen and (max-width: 760px) {
                     font-size: 9px;
+                }
+
+                @media screen and (max-width: 400px) {
+                    font-size: 7px; 
                 }
             }
 
             &__countdown{
                 position: absolute;
-                bottom: 12px;
-                font-size: 70px;
-                right: calc(50% - 165px);
+                bottom: 20px;
+                font-size: 60px;
+                right: calc(45% - 155px);
                 color: $white-color;
                 text-shadow: 3px 3px #7b7b7b5e;
+                @media screen and (min-width: 992px) and (max-width: 1440px){
+                    font-size: 4vw;
+                    right: 10%;
+                }
+
+                @media screen and (max-width: 991px) {
+                    font-size: 14vw;
+                    right: calc(10%);
+                    bottom: 5%;
+                }
+
                 @media screen and (max-width: 760px) {
-                    font-size: 55px;
+                    font-size: 13.5vw;
+                    right: calc(10%);
+                    bottom: 10%;
                 }
 
                 @media screen and (max-width: 400px) {
-                    font-size: 35px;
-                    right: calc(50% - 100px);
-                    bottom: 20px;
+                    font-size: 11vw;
+                    right: calc(15%);
+                    bottom: 10%;
                 }
             }
         }

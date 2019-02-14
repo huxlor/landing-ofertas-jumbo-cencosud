@@ -42,7 +42,7 @@ const getRemainTime = deadline => {
         }, 1000);
     };
 
-    countDown('Feb 14 2019 00:00:00 GMT-0500');
+    countDown('Feb 15 2019 00:00:00 GMT-0500');
 
 function categorySlickMenu(category){
     $(category).slick({
@@ -91,13 +91,13 @@ function categorySlick(category){
         slidesToShow: 5,
         slidesToScroll: 1,
         autoplay: false,
-        autoplaySpeed: 2000,
+        infinite: false,
         dots: false,
         responsive: [
             {
             breakpoint: 1527,
             settings: {
-                slidesToShow: 2,
+                slidesToShow: 4,
                 slidesToScroll: 1,
                 infinite: true,
             }

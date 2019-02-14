@@ -80,9 +80,12 @@
            
         .item-offer {
             border: solid 1px $border-color;
-            border-right: none;
-            max-width: 288px;
             position: relative;
+            @media screen and (min-width: 1440px) {
+                max-width: 288px;
+                border-right: none;
+            }
+
             a {
                 text-decoration: none;
                 .link {
