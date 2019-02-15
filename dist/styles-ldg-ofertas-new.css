@@ -1890,15 +1890,22 @@ b {
         @media screen and (max-width: 400px) {
           .new-offer-landing .cont_menu__item__items button {
             font-size: 11px; } }
-      .new-offer-landing .cont_menu__item .btn-menu {
+      .new-offer-landing .cont_menu__item .slick-arrow {
         font-size: 45px;
         position: absolute;
-        top: calc(50% - 45px); }
-        .new-offer-landing .cont_menu__item .btn-menu.slick-prev {
-          left: 5px; }
-        .new-offer-landing .cont_menu__item .btn-menu.slick-next {
-          right: 5px; }
-        .new-offer-landing .cont_menu__item .btn-menu.slick-disabled {
+        top: 50%;
+        z-index: 100; }
+        .new-offer-landing .cont_menu__item .slick-arrow.slick-prev {
+          left: 0; }
+          .new-offer-landing .cont_menu__item .slick-arrow.slick-prev:before {
+            color: #333 !important;
+            background: transparent; }
+        .new-offer-landing .cont_menu__item .slick-arrow.slick-next {
+          right: 0; }
+          .new-offer-landing .cont_menu__item .slick-arrow.slick-next:before {
+            color: #333 !important;
+            background: transparent; }
+        .new-offer-landing .cont_menu__item .slick-arrow.slick-disabled {
           opacity: 0.2; }
   .new-offer-landing .cont_destacados {
     margin-top: 80px; }
@@ -1923,7 +1930,8 @@ b {
           font-size: 28px; } }
   .new-offer-landing .cont-sxh {
     min-width: initial;
-    margin: 50px 0;
+    display: block;
+    padding: 50px 15px;
     position: relative;
     min-height: 180px; }
     .new-offer-landing .cont-sxh img {
@@ -1978,8 +1986,11 @@ b {
             font-size: 11vw;
             right: calc(15%);
             bottom: 10%; } }
+    .new-offer-landing .cont-sxh .row {
+      position: relative; }
   .new-offer-landing .cont_televisores {
-    margin-bottom: 80px; }
+    margin-bottom: 80px;
+    display: block; }
     .new-offer-landing .cont_televisores__title {
       color: #323232;
       font-size: 40px;
@@ -2000,7 +2011,8 @@ b {
         .new-offer-landing .cont_televisores__title {
           font-size: 28px; } }
   .new-offer-landing .cont_electro {
-    margin-bottom: 80px; }
+    margin-bottom: 80px;
+    display: block; }
     .new-offer-landing .cont_electro__title {
       color: #323232;
       font-size: 40px;
@@ -2021,7 +2033,8 @@ b {
         .new-offer-landing .cont_electro__title {
           font-size: 28px; } }
   .new-offer-landing .cont_tecno {
-    margin-bottom: 80px; }
+    margin-bottom: 80px;
+    display: block; }
     .new-offer-landing .cont_tecno__title {
       color: #323232;
       font-size: 40px;
@@ -2042,7 +2055,8 @@ b {
         .new-offer-landing .cont_tecno__title {
           font-size: 28px; } }
   .new-offer-landing .cont_otras {
-    margin-bottom: 80px; }
+    margin-bottom: 80px;
+    display: block; }
     .new-offer-landing .cont_otras__title {
       color: #323232;
       font-size: 40px;
@@ -2063,7 +2077,8 @@ b {
         .new-offer-landing .cont_otras__title {
           font-size: 28px; } }
   .new-offer-landing .cont_mercado {
-    margin-bottom: 80px; }
+    margin-bottom: 80px;
+    display: block; }
     .new-offer-landing .cont_mercado__title {
       color: #323232;
       font-size: 40px;
@@ -2093,7 +2108,8 @@ b {
           font-size: 18px;
           padding: 0 5%; } }
   .new-offer-landing .cont_interes {
-    margin-bottom: 80px; }
+    margin-bottom: 80px;
+    display: block; }
     .new-offer-landing .cont_interes__title {
       color: #323232;
       font-size: 40px;

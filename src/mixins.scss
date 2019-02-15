@@ -16,6 +16,11 @@
     }
 }
 
+@mixin configCategory {
+    margin-bottom: 80px;
+    display: block;
+}
+
 @mixin creditCardProperty {
     display: inline-block;
     vertical-align: top;

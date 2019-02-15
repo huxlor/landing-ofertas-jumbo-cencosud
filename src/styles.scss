@@ -57,6 +57,12 @@ b {
                         color: $text-green;
                     }
 
+                    &.tv{
+                        // .font-icn-cat {
+                        //     padding-top: 8px;
+                        // }
+                    }
+
                     &.tecno{
                         border-left: solid 1px #202020;
                     }
@@ -92,16 +98,25 @@ b {
                 }
             }  
             
-            .btn-menu{
+            .slick-arrow{
                 font-size: 45px;   
                 position: absolute; 
-                top: calc(50% - 45px);
+                top: 50%;
+                z-index: 100;
                 &.slick-prev{
-                    left: 5px;
+                    left: 0;
+                    &:before{
+                        color: $text-black !important;
+                        background: transparent;
+                    }
                 }
 
                 &.slick-next{
-                    right: 5px;
+                    right: 0;
+                    &:before{
+                        color: $text-black !important;
+                        background: transparent;
+                    }
                 }
 
                 &.slick-disabled{
@@ -120,7 +135,8 @@ b {
 
     .cont-sxh{
         min-width: initial;
-        margin: 50px 0;
+        display: block;
+        padding: 50px 15px;
         position: relative;
         min-height: 180px;
         img{
@@ -168,7 +184,7 @@ b {
                 @media screen and (min-width: 992px) and (max-width: 1440px){
                     font-size: 4vw;
                     right: 10%;
-                    bottom: 12px;
+                    bottom: 12px; 
                 }
 
                 @media screen and (max-width: 991px) {
@@ -190,38 +206,42 @@ b {
                 }
             }
         }
+
+        .row{
+            position: relative;
+        }
     }
 
     .cont_televisores{
-        margin-bottom: 80px;
+        @include configCategory();
         &__title{
             @include titleLanding();  
         }
     }
 
     .cont_electro{ 
-        margin-bottom: 80px;
+        @include configCategory();
         &__title{
             @include titleLanding(); 
         }
     }
 
     .cont_tecno{ 
-        margin-bottom: 80px;
+        @include configCategory();
         &__title{
             @include titleLanding(); 
         }
     }
 
     .cont_otras{ 
-        margin-bottom: 80px;
+        @include configCategory();
         &__title{
             @include titleLanding(); 
         }
     }
 
     .cont_mercado{
-        margin-bottom: 80px;
+        @include configCategory();
         &__title{
             @include titleLanding(); 
         }
@@ -239,7 +259,7 @@ b {
     }
 
     .cont_interes{
-        margin-bottom: 80px;
+        @include configCategory();
         &__title{
             @include titleLanding(); 
         }
