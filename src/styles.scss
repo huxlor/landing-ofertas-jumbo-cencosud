@@ -50,7 +50,7 @@ b {
                 button{
                     text-align: center;
                     margin: 0 auto;
-                    font-size: 20px;
+                    font-size: 14px;
                     color: $text-black;
                     width: 100%;
                     &:hover{
@@ -139,6 +139,9 @@ b {
         padding: 50px 15px;
         position: relative;
         min-height: 180px;
+        @media screen and (max-width: 760px) {
+            padding: 20px 15px 30px;
+        }
         img{
             width: 100%;
         }
@@ -247,12 +250,12 @@ b {
         }
 
         &__tyc{
-            margin-top: 80px;
-            font-size: 27px;
+            margin-top: 50px;
+            font-size: 20px;
             text-align: center; 
             @media screen and (max-width: 760px) {
-                margin-top: 40px;
-                font-size: 18px;
+                margin: 20px 0;
+                font-size: 15px;
                 padding: 0 5%; 
             }
         }

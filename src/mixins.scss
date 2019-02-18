@@ -17,8 +17,11 @@
 }
 
 @mixin configCategory {
-    margin-bottom: 80px;
+    margin-bottom: 50px;
     display: block;
+    @media screen and (max-width: 760px) {
+        margin-bottom: 25px;
+    }
 }
 
 @mixin creditCardProperty {
@@ -53,7 +56,7 @@
 
 @mixin titleLanding{ 
     color: #323232;
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 700;
     border-bottom: 1px solid #d3d3d3;
     padding-bottom: 15px;
@@ -70,13 +73,16 @@
     }
 
     @media screen and (max-width: 760px) {
-        font-size: 28px; 
+        font-size: 20px; 
+        margin-bottom: 0px;
     }
 }
 
 @mixin fichasLanding {
     .content-offers {
+        margin-top: 0px !important;
         @media screen and (max-width: 760px) {
+            margin-top: 20px !important;
             // .slick-list{
             //     width: 90%;
             //     overflow: initial;
@@ -692,12 +698,12 @@
                         .percentPricing {
                             .percentCreditCard {
                                 .tjc-percent {
-                                    color: $mastercard-color-2;
+                                    color: $mastercard-color;
                                     .creditCard {
                                         @include creditCardProperty();
                                         &:before {
                                             @include creditCardBeforeProperty();
-                                            color: $mastercard-color-2;
+                                            color: $mastercard-color;
                                         }
                                     }
                                 }
@@ -985,7 +991,7 @@
                     .info{
                         .productPricing{
                             .tarjeta{
-                                color: $mastercard-color-2;
+                                color: $mastercard-color;
                             }
                         }
                     }
