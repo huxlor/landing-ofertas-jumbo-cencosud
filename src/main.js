@@ -154,6 +154,25 @@ function clickToGo(button,category){
     });
 }
 
+// Function that find if item have shx offer and put one class to modify the styles
+function sxhMobile(){
+    let itemOffer = document.getElementsByClassName('item-offer');
+    // Get all Item Offer
+    for (let item = 0; item < itemOffer.length; item++) {
+        // Get the elements
+        const element = itemOffer[item];   
+        let contTitle = element.children[2].firstElementChild;
+        let containSxh = contTitle.classList.contains('sxh');
+        let contLegal = element.children[3];
+        // If containt SXH offer add Class
+        if (containSxh) {
+            contLegal.classList.add("sxh-mobile"); 
+        }
+    }
+}
+
+// addClass('mobile-sxh');
+
 $(document).ready(function() {
     categorySlick('.televisores');
     categorySlick('.electro-cocina');
@@ -176,5 +195,10 @@ $(document).ready(function() {
     clickToGo('#btn-mercado', '.cont_mercado');
     //Go to Top
     clickToGo('#btn-goTop', '.cont_menu');
+
+
+    // SXH Mobile
+    sxhMobile();
+        
 });
 

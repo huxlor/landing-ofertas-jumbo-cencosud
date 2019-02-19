@@ -80,7 +80,7 @@
 
 @mixin fichasLanding {
     .content-offers {
-        margin-top: 0px !important;
+        // margin-top: 0px !important;
         @media screen and (max-width: 760px) {
             margin-top: 20px !important;
             // .slick-list{
@@ -1484,8 +1484,8 @@
                     }
 
                     @media screen and (max-width: 400px) {
-                        width: 80%;
-                        float: right;
+                        width: 100%;
+                        // float: right;
                         font-size: 10px;
                         &:last-child {
                             padding-bottom: 10px;
@@ -1498,6 +1498,14 @@
 
                 @media screen and (max-width: 760px) {
                     margin-top: 10px;
+                }
+
+                &.sxh-mobile{
+                    p{
+                        @media screen and (max-width: 760px) {
+                            padding-left: calc(20% - 15px);
+                        }
+                    }
                 }
             }
             &:last-child {
