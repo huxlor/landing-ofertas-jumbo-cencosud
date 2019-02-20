@@ -553,6 +553,8 @@
                                 .labelPercent {
                                     height: 30px !important;
                                     @include labelPercentProperty();
+                                    // margin-left: 0 !important;
+                                    padding: 0 5px;
                                     @media screen and (max-width: 760px) {
                                         padding: 0 10px;
                                         overflow: inherit;
@@ -1535,6 +1537,15 @@
                     &:after {
                         @include labelProperty();
                         background-image: url('https://www.tiendasjumbo.co/arquivos/label-colpatria-bg-new-landing-v2.png');
+                    }
+                }
+
+                &.scotia{
+                    .title-product {
+                        &:after {
+                            @include labelProperty();
+                            background-image: url('https://www.tiendasjumbo.co/arquivos/label-scotia-bg-new-landing-v2.png');
+                        }
                     }
                 }
             }

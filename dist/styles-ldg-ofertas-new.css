@@ -1146,7 +1146,8 @@ b {
     .new-offer-landing .content-offers .item-offer.dinamica.bbog .info .percentPricing .percentCreditCard .labelPercent {
       height: 30px !important;
       text-align: center;
-      margin-left: -15px; }
+      margin-left: -15px;
+      padding: 0 5px; }
       @media screen and (max-width: 760px) {
         .new-offer-landing .content-offers .item-offer.dinamica.bbog .info .percentPricing .percentCreditCard .labelPercent {
           padding: 0 10px;
@@ -1738,6 +1739,22 @@ b {
           height: 50px;
           background-size: 100%;
           left: calc(50% - 20px); } }
+    .new-offer-landing .content-offers .item-offer.colpatria.scotia .title-product:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 10px;
+      display: block;
+      width: 125px;
+      height: 50px;
+      background-repeat: no-repeat;
+      background-image: url("https://www.tiendasjumbo.co/arquivos/label-scotia-bg-new-landing-v2.png"); }
+      @media screen and (max-width: 760px) {
+        .new-offer-landing .content-offers .item-offer.colpatria.scotia .title-product:after {
+          width: 80px;
+          height: 50px;
+          background-size: 100%;
+          left: calc(50% - 20px); } }
     .new-offer-landing .content-offers .item-offer.visa .title-product:after {
       content: '';
       position: absolute;
@@ -1952,49 +1969,78 @@ b {
       z-index: 100;
       background-color: transparent; }
     .new-offer-landing .cont-sxh__left {
-      position: relative; }
-      .new-offer-landing .cont-sxh__left p {
-        position: absolute;
-        bottom: 5px;
-        width: 100%;
-        font-size: 12px;
-        text-align: center; }
-        @media screen and (min-width: 992px) and (max-width: 1440px) {
-          .new-offer-landing .cont-sxh__left p {
-            font-size: .8vw; } }
-        @media screen and (max-width: 760px) {
-          .new-offer-landing .cont-sxh__left p {
-            font-size: 9px; } }
-        @media screen and (max-width: 400px) {
-          .new-offer-landing .cont-sxh__left p {
-            font-size: 7px; } }
-      .new-offer-landing .cont-sxh__left__countdown {
-        position: absolute;
-        bottom: 20px;
-        font-size: 60px;
-        right: calc(45% - 155px);
+      position: relative;
+      background-image: url("https://jumbocolombiafood.vteximg.com.br/arquivos/BnrAc-Desktop-SXH-Landing-Ofertas_bg.jpg");
+      background-size: cover; }
+      @media screen and (max-width: 760px) {
+        .new-offer-landing .cont-sxh__left {
+          padding-top: 5%; } }
+      .new-offer-landing .cont-sxh__left__row .sub-title {
+        text-transform: uppercase;
+        font-size: 30px;
         color: #fff;
-        text-shadow: 3px 3px #7b7b7b5e; }
+        text-shadow: 3px 3px #7b7b7b5e;
+        text-align: center;
+        padding-top: 25px; }
         @media screen and (min-width: 992px) and (max-width: 1440px) {
-          .new-offer-landing .cont-sxh__left__countdown {
+          .new-offer-landing .cont-sxh__left__row .sub-title {
+            padding-top: 3%; } }
+        @media screen and (max-width: 991px) {
+          .new-offer-landing .cont-sxh__left__row .sub-title {
+            padding-top: 15%; } }
+        @media screen and (max-width: 760px) {
+          .new-offer-landing .cont-sxh__left__row .sub-title {
+            padding-top: 5%; } }
+        @media screen and (max-width: 400px) {
+          .new-offer-landing .cont-sxh__left__row .sub-title {
+            font-size: 25px; } }
+      .new-offer-landing .cont-sxh__left__row .countdown {
+        font-size: 60px;
+        color: #fff;
+        text-align: center;
+        text-shadow: 3px 3px #7b7b7b5e;
+        line-height: 0.5;
+        margin-top: 10px; }
+        @media screen and (min-width: 992px) and (max-width: 1440px) {
+          .new-offer-landing .cont-sxh__left__row .countdown {
             font-size: 4vw;
             right: 10%;
             bottom: 12px; } }
         @media screen and (max-width: 991px) {
-          .new-offer-landing .cont-sxh__left__countdown {
+          .new-offer-landing .cont-sxh__left__row .countdown {
             font-size: 14vw;
             right: calc(10%);
             bottom: 5%; } }
         @media screen and (max-width: 760px) {
-          .new-offer-landing .cont-sxh__left__countdown {
+          .new-offer-landing .cont-sxh__left__row .countdown {
             font-size: 13.5vw;
             right: calc(10%);
             bottom: 10%; } }
         @media screen and (max-width: 400px) {
-          .new-offer-landing .cont-sxh__left__countdown {
-            font-size: 11vw;
+          .new-offer-landing .cont-sxh__left__row .countdown {
+            font-size: 10vw;
             right: calc(15%);
             bottom: 10%; } }
+        .new-offer-landing .cont-sxh__left__row .countdown span {
+          line-height: 0.5; }
+      .new-offer-landing .cont-sxh__left p.row {
+        width: 100%;
+        font-size: 10px;
+        text-align: center;
+        margin: 0;
+        margin: 7px 0; }
+        @media screen and (min-width: 992px) and (max-width: 1440px) {
+          .new-offer-landing .cont-sxh__left p.row {
+            font-size: .75vw; } }
+        @media screen and (max-width: 991px) {
+          .new-offer-landing .cont-sxh__left p.row {
+            font-size: 1.5vw; } }
+        @media screen and (max-width: 760px) {
+          .new-offer-landing .cont-sxh__left p.row {
+            font-size: 1.5vw; } }
+        @media screen and (max-width: 400px) {
+          .new-offer-landing .cont-sxh__left p.row {
+            font-size: 2vw; } }
     .new-offer-landing .cont-sxh .row {
       position: relative; }
   .new-offer-landing .cont_televisores {
