@@ -823,6 +823,9 @@ b {
           padding-right: 5px; } }
     .new-offer-landing .content-offers .item-offer .info {
       min-height: 73px; }
+      @media screen and (max-width: 400px) {
+        .new-offer-landing .content-offers .item-offer .info {
+          margin-top: 15px; } }
       @media screen and (max-width: 350px) {
         .new-offer-landing .content-offers .item-offer .info {
           margin-top: 25px; } }
@@ -932,7 +935,7 @@ b {
           @media screen and (max-width: 400px) {
             .new-offer-landing .content-offers .item-offer.dinamica.TarjetaCencosud .info .percentPricing .percentCreditCard .tjc-percent .creditCard:before {
               font-size: 10px;
-              right: 5px; } }
+              right: 15%; } }
           @media screen and (max-width: 350px) {
             .new-offer-landing .content-offers .item-offer.dinamica.TarjetaCencosud .info .percentPricing .percentCreditCard .tjc-percent .creditCard:before {
               font-size: 10px;
@@ -955,8 +958,8 @@ b {
             .new-offer-landing .content-offers .item-offer.dinamica.TarjetaCencosud .info .percentPricing .percentCreditCard .tjc-percent .creditCard:after {
               width: 25px;
               height: 15px;
-              right: 7px; } }
-          @media screen and (max-width: 400px) {
+              right: 15%; } }
+          @media screen and (max-width: 350px) {
             .new-offer-landing .content-offers .item-offer.dinamica.TarjetaCencosud .info .percentPricing .percentCreditCard .tjc-percent .creditCard:after {
               width: 20px;
               height: 12px;
@@ -967,11 +970,11 @@ b {
         margin-left: -15px; }
         @media screen and (max-width: 400px) {
           .new-offer-landing .content-offers .item-offer.dinamica.TarjetaCencosud .info .percentPricing .percentCreditCard .tjc-percent .labelPercent {
-            padding: 0 10px;
+            padding: 0 15px;
             font-size: 10px; } }
         @media screen and (max-width: 350px) {
           .new-offer-landing .content-offers .item-offer.dinamica.TarjetaCencosud .info .percentPricing .percentCreditCard .tjc-percent .labelPercent {
-            padding: 0 5px; } }
+            padding: 0 10px; } }
     .new-offer-landing .content-offers .item-offer.dinamica.TarjetaCencosud .info .percentPricing .percentCreditCard .regular-percent .creditCard {
       display: inline-block;
       vertical-align: top;
@@ -991,7 +994,7 @@ b {
         @media screen and (max-width: 400px) {
           .new-offer-landing .content-offers .item-offer.dinamica.TarjetaCencosud .info .percentPricing .percentCreditCard .regular-percent .creditCard:before {
             font-size: 10px;
-            right: 5px; } }
+            right: 15%; } }
         @media screen and (max-width: 350px) {
           .new-offer-landing .content-offers .item-offer.dinamica.TarjetaCencosud .info .percentPricing .percentCreditCard .regular-percent .creditCard:before {
             font-size: 10px;
@@ -1027,7 +1030,7 @@ b {
           @media screen and (max-width: 400px) {
             .new-offer-landing .content-offers .item-offer.dinamica.aval .info .percentPricing .percentCreditCard .tjc-percent .creditCard:before {
               font-size: 10px;
-              right: 5px; } }
+              right: 15%; } }
           @media screen and (max-width: 350px) {
             .new-offer-landing .content-offers .item-offer.dinamica.aval .info .percentPricing .percentCreditCard .tjc-percent .creditCard:before {
               font-size: 10px;
@@ -1059,7 +1062,7 @@ b {
         @media screen and (max-width: 400px) {
           .new-offer-landing .content-offers .item-offer.dinamica.aval .info .percentPricing .percentCreditCard .regular-percent .creditCard:before {
             font-size: 10px;
-            right: 5px; } }
+            right: 15%; } }
         @media screen and (max-width: 350px) {
           .new-offer-landing .content-offers .item-offer.dinamica.aval .info .percentPricing .percentCreditCard .regular-percent .creditCard:before {
             font-size: 10px;
@@ -1095,7 +1098,7 @@ b {
           @media screen and (max-width: 400px) {
             .new-offer-landing .content-offers .item-offer.dinamica.bbva .info .percentPricing .percentCreditCard .tjc-percent .creditCard:before {
               font-size: 10px;
-              right: 5px; } }
+              right: 15%; } }
           @media screen and (max-width: 350px) {
             .new-offer-landing .content-offers .item-offer.dinamica.bbva .info .percentPricing .percentCreditCard .tjc-percent .creditCard:before {
               font-size: 10px;
@@ -1136,7 +1139,7 @@ b {
           @media screen and (max-width: 400px) {
             .new-offer-landing .content-offers .item-offer.dinamica.colpatria .info .percentPricing .percentCreditCard .tjc-percent .creditCard:before {
               font-size: 10px;
-              right: 5px; } }
+              right: 15%; } }
           @media screen and (max-width: 350px) {
             .new-offer-landing .content-offers .item-offer.dinamica.colpatria .info .percentPricing .percentCreditCard .tjc-percent .creditCard:before {
               font-size: 10px;
@@ -1177,7 +1180,7 @@ b {
           @media screen and (max-width: 400px) {
             .new-offer-landing .content-offers .item-offer.dinamica.visa .info .percentPricing .percentCreditCard .tjc-percent .creditCard:before {
               font-size: 10px;
-              right: 5px; } }
+              right: 15%; } }
           @media screen and (max-width: 350px) {
             .new-offer-landing .content-offers .item-offer.dinamica.visa .info .percentPricing .percentCreditCard .tjc-percent .creditCard:before {
               font-size: 10px;
@@ -1218,7 +1221,7 @@ b {
           @media screen and (max-width: 400px) {
             .new-offer-landing .content-offers .item-offer.dinamica.bbog .info .percentPricing .percentCreditCard .tjc-percent .creditCard:before {
               font-size: 10px;
-              right: 5px; } }
+              right: 15%; } }
           @media screen and (max-width: 350px) {
             .new-offer-landing .content-offers .item-offer.dinamica.bbog .info .percentPricing .percentCreditCard .tjc-percent .creditCard:before {
               font-size: 10px;
@@ -1244,7 +1247,7 @@ b {
         float: right; } }
     .new-offer-landing .content-offers .item-offer.dinamica.bbog .legals {
       margin-top: 15px; }
-      @media screen and (max-width: 350px) {
+      @media screen and (max-width: 400px) {
         .new-offer-landing .content-offers .item-offer.dinamica.bbog .legals {
           margin-top: 10px; } }
     .new-offer-landing .content-offers .item-offer.dinamica.codensa .info .percentPricing .percentCreditCard .tjc-percent {
@@ -1269,7 +1272,7 @@ b {
           @media screen and (max-width: 400px) {
             .new-offer-landing .content-offers .item-offer.dinamica.codensa .info .percentPricing .percentCreditCard .tjc-percent .creditCard:before {
               font-size: 10px;
-              right: 5px; } }
+              right: 15%; } }
           @media screen and (max-width: 350px) {
             .new-offer-landing .content-offers .item-offer.dinamica.codensa .info .percentPricing .percentCreditCard .tjc-percent .creditCard:before {
               font-size: 10px;
@@ -1291,7 +1294,7 @@ b {
           padding: 0 5px; } }
     .new-offer-landing .content-offers .item-offer.dinamica.codensa .legals {
       margin-top: 15px; }
-      @media screen and (max-width: 350px) {
+      @media screen and (max-width: 400px) {
         .new-offer-landing .content-offers .item-offer.dinamica.codensa .legals {
           margin-top: 10px; } }
     .new-offer-landing .content-offers .item-offer.dinamica.itau .info .percentPricing .percentCreditCard .tjc-percent {
@@ -1316,7 +1319,7 @@ b {
           @media screen and (max-width: 400px) {
             .new-offer-landing .content-offers .item-offer.dinamica.itau .info .percentPricing .percentCreditCard .tjc-percent .creditCard:before {
               font-size: 10px;
-              right: 5px; } }
+              right: 15%; } }
           @media screen and (max-width: 350px) {
             .new-offer-landing .content-offers .item-offer.dinamica.itau .info .percentPricing .percentCreditCard .tjc-percent .creditCard:before {
               font-size: 10px;
@@ -1358,7 +1361,7 @@ b {
           @media screen and (max-width: 400px) {
             .new-offer-landing .content-offers .item-offer.dinamica.aexpress .info .percentPricing .percentCreditCard .tjc-percent .creditCard:before {
               font-size: 10px;
-              right: 5px; } }
+              right: 15%; } }
           @media screen and (max-width: 350px) {
             .new-offer-landing .content-offers .item-offer.dinamica.aexpress .info .percentPricing .percentCreditCard .tjc-percent .creditCard:before {
               font-size: 10px;
@@ -1383,7 +1386,7 @@ b {
           padding: 0 5px; } }
     .new-offer-landing .content-offers .item-offer.dinamica.aexpress .legals {
       margin-top: 15px; }
-      @media screen and (max-width: 350px) {
+      @media screen and (max-width: 400px) {
         .new-offer-landing .content-offers .item-offer.dinamica.aexpress .legals {
           margin-top: 10px; } }
     .new-offer-landing .content-offers .item-offer.dinamica.mastercard .info .percentPricing .percentCreditCard .tjc-percent {
@@ -1408,7 +1411,7 @@ b {
           @media screen and (max-width: 400px) {
             .new-offer-landing .content-offers .item-offer.dinamica.mastercard .info .percentPricing .percentCreditCard .tjc-percent .creditCard:before {
               font-size: 10px;
-              right: 5px; } }
+              right: 15%; } }
           @media screen and (max-width: 350px) {
             .new-offer-landing .content-offers .item-offer.dinamica.mastercard .info .percentPricing .percentCreditCard .tjc-percent .creditCard:before {
               font-size: 10px;
@@ -1433,7 +1436,7 @@ b {
           padding: 0 5px; } }
     .new-offer-landing .content-offers .item-offer.dinamica.mastercard .legals {
       margin-top: 15px; }
-      @media screen and (max-width: 350px) {
+      @media screen and (max-width: 400px) {
         .new-offer-landing .content-offers .item-offer.dinamica.mastercard .legals {
           margin-top: 10px; } }
     .new-offer-landing .content-offers .item-offer.dinamica.simple .labelPercent {
@@ -1525,7 +1528,7 @@ b {
           left: calc(50% - 95px); }
           @media screen and (max-width: 400px) {
             .new-offer-landing .content-offers .item-offer.producto.TarjetaCencosud .info .productPricing .tarjeta div:after {
-              left: calc(50% - 68px); } }
+              left: calc(50% - 78px); } }
           @media screen and (max-width: 350px) {
             .new-offer-landing .content-offers .item-offer.producto.TarjetaCencosud .info .productPricing .tarjeta div:after {
               left: calc(50% - 60px); } }
@@ -1549,7 +1552,7 @@ b {
       color: #255faa; }
     .new-offer-landing .content-offers .item-offer.producto.aval .legals {
       margin-top: 11px; }
-      @media screen and (max-width: 350px) {
+      @media screen and (max-width: 400px) {
         .new-offer-landing .content-offers .item-offer.producto.aval .legals {
           margin-top: 10px; } }
     .new-offer-landing .content-offers .item-offer.producto.bbva .info .productPricing .tarjeta {
@@ -1560,37 +1563,37 @@ b {
       color: #cb2130; }
     .new-offer-landing .content-offers .item-offer.producto.colpatria .legals {
       margin-top: 11px; }
-      @media screen and (max-width: 350px) {
+      @media screen and (max-width: 400px) {
         .new-offer-landing .content-offers .item-offer.producto.colpatria .legals {
           margin-top: 10px; } }
     .new-offer-landing .content-offers .item-offer.producto.visa .info .productPricing .tarjeta {
       color: #25479f; }
-    @media screen and (max-width: 350px) {
+    @media screen and (max-width: 400px) {
       .new-offer-landing .content-offers .item-offer.producto.visa .legals {
         margin-top: 10px; } }
     .new-offer-landing .content-offers .item-offer.producto.bbog .info .productPricing .tarjeta {
       color: #2a3e8b; }
-    @media screen and (max-width: 350px) {
+    @media screen and (max-width: 400px) {
       .new-offer-landing .content-offers .item-offer.producto.bbog .legals {
         margin-top: 10px; } }
     .new-offer-landing .content-offers .item-offer.producto.codensa .info .productPricing .tarjeta {
       color: #20adc1; }
-    @media screen and (max-width: 350px) {
+    @media screen and (max-width: 400px) {
       .new-offer-landing .content-offers .item-offer.producto.codensa .legals {
         margin-top: 10px; } }
     .new-offer-landing .content-offers .item-offer.producto.itau .info .productPricing .tarjeta {
       color: #302f8c; }
-    @media screen and (max-width: 350px) {
+    @media screen and (max-width: 400px) {
       .new-offer-landing .content-offers .item-offer.producto.itau .legals {
         margin-top: 10px; } }
     .new-offer-landing .content-offers .item-offer.producto.aexpress .info .productPricing .tarjeta {
       color: #017cd4; }
-    @media screen and (max-width: 350px) {
+    @media screen and (max-width: 400px) {
       .new-offer-landing .content-offers .item-offer.producto.aexpress .legals {
         margin-top: 10px; } }
     .new-offer-landing .content-offers .item-offer.producto.mastercard .info .productPricing .tarjeta {
       color: #e20d17; }
-    @media screen and (max-width: 350px) {
+    @media screen and (max-width: 400px) {
       .new-offer-landing .content-offers .item-offer.producto.mastercard .legals {
         margin-top: 10px; } }
     .new-offer-landing .content-offers .item-offer.dinamica-food .image-product {
@@ -1780,7 +1783,10 @@ b {
         .new-offer-landing .content-offers .item-offer.dinamica-food.especial .legals {
           margin-top: 10px; }
           .new-offer-landing .content-offers .item-offer.dinamica-food.especial .legals p:first-child {
-            padding-top: 15px; } }
+            padding-top: 12px; } }
+      @media screen and (max-width: 350px) {
+        .new-offer-landing .content-offers .item-offer.dinamica-food.especial .legals p:first-child {
+          padding-top: 15px; } }
     .new-offer-landing .content-offers .item-offer.dinamica-food.especial.aval .nameDynamic {
       color: #255faa; }
     .new-offer-landing .content-offers .item-offer.dinamica-food.especial.aval .numberDynamic {
