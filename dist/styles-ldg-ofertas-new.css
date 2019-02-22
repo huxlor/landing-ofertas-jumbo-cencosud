@@ -797,6 +797,9 @@ b {
               font-size: 14px; }
             .new-offer-landing .content-offers .item-offer .title-product.large:after {
               left: calc(20% - 20px) !important; } }
+        @media screen and (max-width: 350px) {
+          .new-offer-landing .content-offers .item-offer .title-product.large {
+            margin-top: 13px; } }
       @media screen and (max-width: 760px) {
         .new-offer-landing .content-offers .item-offer .title-product {
           text-align: left;
@@ -1288,6 +1291,9 @@ b {
           padding: 0 5px; } }
     .new-offer-landing .content-offers .item-offer.dinamica.codensa .legals {
       margin-top: 15px; }
+      @media screen and (max-width: 350px) {
+        .new-offer-landing .content-offers .item-offer.dinamica.codensa .legals {
+          margin-top: 10px; } }
     .new-offer-landing .content-offers .item-offer.dinamica.itau .info .percentPricing .percentCreditCard .tjc-percent {
       color: #302f8c; }
       .new-offer-landing .content-offers .item-offer.dinamica.itau .info .percentPricing .percentCreditCard .tjc-percent .creditCard {
@@ -1377,6 +1383,9 @@ b {
           padding: 0 5px; } }
     .new-offer-landing .content-offers .item-offer.dinamica.aexpress .legals {
       margin-top: 15px; }
+      @media screen and (max-width: 350px) {
+        .new-offer-landing .content-offers .item-offer.dinamica.aexpress .legals {
+          margin-top: 10px; } }
     .new-offer-landing .content-offers .item-offer.dinamica.mastercard .info .percentPricing .percentCreditCard .tjc-percent {
       color: #e20d17; }
       .new-offer-landing .content-offers .item-offer.dinamica.mastercard .info .percentPricing .percentCreditCard .tjc-percent .creditCard {
@@ -1424,6 +1433,9 @@ b {
           padding: 0 5px; } }
     .new-offer-landing .content-offers .item-offer.dinamica.mastercard .legals {
       margin-top: 15px; }
+      @media screen and (max-width: 350px) {
+        .new-offer-landing .content-offers .item-offer.dinamica.mastercard .legals {
+          margin-top: 10px; } }
     .new-offer-landing .content-offers .item-offer.dinamica.simple .labelPercent {
       height: 30px !important; }
     .new-offer-landing .content-offers .item-offer.dinamica.simple .legals {
@@ -1548,18 +1560,39 @@ b {
       color: #cb2130; }
     .new-offer-landing .content-offers .item-offer.producto.colpatria .legals {
       margin-top: 11px; }
+      @media screen and (max-width: 350px) {
+        .new-offer-landing .content-offers .item-offer.producto.colpatria .legals {
+          margin-top: 10px; } }
     .new-offer-landing .content-offers .item-offer.producto.visa .info .productPricing .tarjeta {
       color: #25479f; }
+    @media screen and (max-width: 350px) {
+      .new-offer-landing .content-offers .item-offer.producto.visa .legals {
+        margin-top: 10px; } }
     .new-offer-landing .content-offers .item-offer.producto.bbog .info .productPricing .tarjeta {
       color: #2a3e8b; }
+    @media screen and (max-width: 350px) {
+      .new-offer-landing .content-offers .item-offer.producto.bbog .legals {
+        margin-top: 10px; } }
     .new-offer-landing .content-offers .item-offer.producto.codensa .info .productPricing .tarjeta {
       color: #20adc1; }
+    @media screen and (max-width: 350px) {
+      .new-offer-landing .content-offers .item-offer.producto.codensa .legals {
+        margin-top: 10px; } }
     .new-offer-landing .content-offers .item-offer.producto.itau .info .productPricing .tarjeta {
       color: #302f8c; }
+    @media screen and (max-width: 350px) {
+      .new-offer-landing .content-offers .item-offer.producto.itau .legals {
+        margin-top: 10px; } }
     .new-offer-landing .content-offers .item-offer.producto.aexpress .info .productPricing .tarjeta {
       color: #017cd4; }
+    @media screen and (max-width: 350px) {
+      .new-offer-landing .content-offers .item-offer.producto.aexpress .legals {
+        margin-top: 10px; } }
     .new-offer-landing .content-offers .item-offer.producto.mastercard .info .productPricing .tarjeta {
       color: #e20d17; }
+    @media screen and (max-width: 350px) {
+      .new-offer-landing .content-offers .item-offer.producto.mastercard .legals {
+        margin-top: 10px; } }
     .new-offer-landing .content-offers .item-offer.dinamica-food .image-product {
       margin-bottom: 0px; }
     .new-offer-landing .content-offers .item-offer.dinamica-food .title-product h3 {
