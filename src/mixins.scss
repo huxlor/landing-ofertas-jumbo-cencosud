@@ -1069,7 +1069,7 @@
                     }
 
                     .legals {
-                        margin-top: 11px;
+                        margin-top: 13px;
                         @media screen and (max-width: 760px) {
                             margin-top: 10px;
                         }
@@ -1086,7 +1086,7 @@
                     }
 
                     .legals {
-                        margin-top: 11px;
+                        margin-top: 12px;
                         // @media screen and (max-width: 760px) {}
                         @media screen and (max-width: 760px) {
                             margin-top: 10px;
@@ -1104,8 +1104,11 @@
                     }
 
                     .legals {
-                        margin-top: 10px;
+                        margin-top: 12px;
                         // @media screen and (max-width: 760px) {}
+                        @media screen and (max-width: 760px) {
+                            margin-top: 10px;
+                        }
                     }
                 }
 
@@ -1119,7 +1122,7 @@
                     }
 
                     .legals {
-                        margin-top: 11px;
+                        margin-top: 12px;
                         // @media screen and (max-width: 760px) {}
                         @media screen and (max-width: 760px) {
                             margin-top: 10px;
@@ -1581,7 +1584,7 @@
                     }
 
                     .legals{
-                        margin-top: 32px;
+                        margin-top: 34px;
                         @media screen and (max-width: 760px) {
                             margin-top: 10px;
                             p{

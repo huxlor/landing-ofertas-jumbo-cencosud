@@ -1766,25 +1766,28 @@ b {
           .new-offer-landing .content-offers .item-offer.producto.TarjetaCencosud .info .productPricing .tarjeta div {
             padding-left: 33px; } }
     .new-offer-landing .content-offers .item-offer.producto.TarjetaCencosud .legals {
-      margin-top: 11px; }
+      margin-top: 13px; }
       @media screen and (max-width: 760px) {
         .new-offer-landing .content-offers .item-offer.producto.TarjetaCencosud .legals {
           margin-top: 10px; } }
     .new-offer-landing .content-offers .item-offer.producto.aval .info .productPricing .tarjeta {
       color: #255faa; }
     .new-offer-landing .content-offers .item-offer.producto.aval .legals {
-      margin-top: 11px; }
+      margin-top: 12px; }
       @media screen and (max-width: 760px) {
         .new-offer-landing .content-offers .item-offer.producto.aval .legals {
           margin-top: 10px; } }
     .new-offer-landing .content-offers .item-offer.producto.bbva .info .productPricing .tarjeta {
       color: #0b1d3d; }
     .new-offer-landing .content-offers .item-offer.producto.bbva .legals {
-      margin-top: 10px; }
+      margin-top: 12px; }
+      @media screen and (max-width: 760px) {
+        .new-offer-landing .content-offers .item-offer.producto.bbva .legals {
+          margin-top: 10px; } }
     .new-offer-landing .content-offers .item-offer.producto.colpatria .info .productPricing .tarjeta {
       color: #cb2130; }
     .new-offer-landing .content-offers .item-offer.producto.colpatria .legals {
-      margin-top: 11px; }
+      margin-top: 12px; }
       @media screen and (max-width: 760px) {
         .new-offer-landing .content-offers .item-offer.producto.colpatria .legals {
           margin-top: 10px; } }
@@ -1995,7 +1998,7 @@ b {
       .new-offer-landing .content-offers .item-offer.dinamica-food.especial .info {
         margin-top: 15px; } }
     .new-offer-landing .content-offers .item-offer.dinamica-food.especial .legals {
-      margin-top: 32px; }
+      margin-top: 34px; }
       @media screen and (max-width: 760px) {
         .new-offer-landing .content-offers .item-offer.dinamica-food.especial .legals {
           margin-top: 10px; }

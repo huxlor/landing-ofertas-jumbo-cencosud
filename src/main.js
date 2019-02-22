@@ -122,7 +122,8 @@ function categorySlick(category){
             breakpoint: 760,
             settings: {
                 slidesToShow: 1,
-                slidesToScroll: 1
+                slidesToScroll: 1,
+                dots:true
             }
             },
             {
@@ -131,7 +132,7 @@ function categorySlick(category){
                 slidesToShow: 1,
                 slidesToScroll: 1,
                 infinite: true,
-                dots: false
+                dots: true
             }
             },
             {
@@ -140,7 +141,7 @@ function categorySlick(category){
                 slidesToShow: 1,
                 slidesToScroll: 1,
                 infinite: true,
-                dots: false
+                dots: true
             }
             }
         ]
